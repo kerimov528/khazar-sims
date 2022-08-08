@@ -1,0 +1,164 @@
+@use "variable"as *;
+
+* {
+    @include reset;
+}
+*:focus {
+    box-shadow: none;
+}
+
+
+body {
+    background: url("../../img/login_bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    .shadow__box {
+        display: none;
+    }
+    .box {
+        display: none;
+        width: 32em;
+        max-width: 100%;
+        padding: 1.25em;
+
+        .box__content {
+            padding: 0 1.6em;
+            color: #545454;
+            font-size: 1.125em;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+            word-wrap: break-word;
+            label {
+                font-weight: 500;
+            }
+            input {
+                height: 2.624em;
+                padding: 0 .75em;
+                font-size: 1.2rem;
+            }
+        }
+        .box__error {
+            display: none;
+            .header {
+                padding: 1.2rem 0;
+                .icon__box {
+                    width: 5rem;
+                    height: 5rem;
+                    padding: 1rem;
+                    border-color: #f27474 !important;
+                    svg {
+                        fill: #f27474;
+                    }
+                }
+                h2 {
+                    @include titleH2;
+                }
+            }
+            button {
+                font-size: 1.2rem;
+                padding: .625rem 1.1rem;
+            }
+
+        }
+    }
+}
+
+// login style 
+.container__login {
+    width: 18.75rem;
+
+    .login__box {
+        min-height: 100vh;
+        background-color: $login_bg_color;
+        border: 5px ridge $login_border_color;
+
+        form {
+            min-height: 100vh;
+            padding: 9.375rem 5px;
+
+            .form__input {
+                position: relative;
+                height: 3.125rem;
+                margin-bottom: .6rem;
+
+                input {
+                    width: 100%;
+                    background: #fff;
+                    border-radius: $login__borderR;
+                    padding: 0 2rem 0 3.3rem;
+                    font-family: "Montserrat-Bold", sans-serif;
+                    font-size: 1rem;
+                    line-height: 1.2;
+                    height: 3.125rem;
+                    color: black;
+                    outline: 0;
+                    box-shadow: none;
+                    padding: 0 2rem 0 3.3rem;
+
+                    &::placeholder {
+                        font-weight: 700;
+                        color: $icon_color;
+                    }
+                }
+
+                .icon__input {
+                    color: $icon_color;
+                    border-radius: $login__borderR;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 1.9rem;
+                    pointer-events: none;
+                    transition: all 0.4s;
+
+                    &.iconAtFocus {
+                        color: cyan;
+                        padding-left: 1.5rem;
+                    }
+                }
+
+            }
+
+            .form__input__btn button {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #e0e0e0;
+                width: 100%;
+                height: 3.125rem;
+                border-radius: $login__borderR;
+                background: #333333;
+
+                &:hover {
+                    background: linear-gradient(to top, #04506b, #92a6ad);
+                }
+            }
+
+            .error__info {
+                display: none;
+                margin-bottom: -.5rem;
+
+                span {
+                    color: white;
+                    font-weight: 600;
+                    font-size: small;
+                }
+            }
+
+            .form__password__forget a {
+                font-size: 1rem;
+                color: cyan;
+                line-height: 1.4;
+                letter-spacing: .3px;
+                text-decoration: none;
+                transition: all .4s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
