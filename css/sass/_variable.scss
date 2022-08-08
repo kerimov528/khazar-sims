@@ -3,11 +3,13 @@ $login_bg_color: rgba(50, 189, 226, 0.2);
 $icon_color: #999999;
 $login__borderR: 1.523rem;
 
+// menu variable
+$menuSidebarColor: #002f6c;
+
 @mixin reset {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
 }
 
 @mixin titleH2 {
@@ -18,4 +20,29 @@ $login__borderR: 1.523rem;
     font-size: 1.675em;
     font-weight: 550;
     text-align: center;
+}
+
+@mixin shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+@mixin shadowBox {
+    background-color: #000;
+    z-index: 1;
+        
+}
+@mixin box {
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    z-index: 2;
+}
+@mixin boxContent {
+    padding: 0 1.6em;
+    color: #545454;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
 }

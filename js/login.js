@@ -29,8 +29,9 @@ $(() => {
                     var count = 0, num = 0;
                     $.each(data, function (key, value) {
                         num++;
-                        if ($("#username").val() == value.username && $("#loginPassword").val() ==
-                            value.password) {
+                        if ($("#username").val() == value.username && $("#loginPassword").val() == value.password) {
+                            alert(value.fullName);
+                            $("#userNameAtNav").text(value.fullName);
                             window.location.href = "menu.html";
                         } else {
                             count++;

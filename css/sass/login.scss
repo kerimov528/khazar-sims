@@ -3,6 +3,7 @@
 * {
     @include reset;
 }
+
 *:focus {
     box-shadow: none;
 }
@@ -13,49 +14,53 @@ body {
     background-size: 100% 100%;
     background-position: center center;
     background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+
     .shadow__box {
         display: none;
+        @include shadowBox;
     }
+
     .box {
         display: none;
-        width: 32em;
-        max-width: 100%;
-        padding: 1.25em;
+        @include box;
 
         .box__content {
-            padding: 0 1.6em;
-            color: #545454;
-            font-size: 1.125em;
-            font-weight: 400;
-            line-height: normal;
-            text-align: center;
-            word-wrap: break-word;
+            @include boxContent;
+
             label {
                 font-weight: 500;
             }
+
             input {
                 height: 2.624em;
                 padding: 0 .75em;
                 font-size: 1.2rem;
             }
         }
+
         .box__error {
             display: none;
+
             .header {
                 padding: 1.2rem 0;
+
                 .icon__box {
                     width: 5rem;
                     height: 5rem;
                     padding: 1rem;
                     border-color: #f27474 !important;
+
                     svg {
                         fill: #f27474;
                     }
                 }
+
                 h2 {
                     @include titleH2;
                 }
             }
+
             button {
                 font-size: 1.2rem;
                 padding: .625rem 1.1rem;

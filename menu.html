@@ -12,29 +12,194 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Material Icons  -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Fontawasome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+        integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/login.js"></script>
 
     <!-- main css -->
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/menu.min.css" />
 
     <title>Xəzər Universiteti</title>
 </head>
-    
-   <body>
-    <div class="wrapper d-flex">
-        <div class="sidebar"></div>
-        <div class="main__content"></div>
+
+<body>
+    <div class="wrapper d-flex position-relative">
+        <div class="sidebar navbar-nav">
+            <a href="#" class="sidebar__brand text-center">
+                <img src="./img/sidebar-amblem.png" alt="Khazar Logo" />
+            </a>
+            <hr class="divider my-0" />
+            <li class="nav-item active position-relative">
+                <a href="#"
+                    class="nav-link collapsed d-flex flex-column align-items-center justify-content-center text-white text-center"
+                    data-toggle="collapse" data-target="#sidebarMenu" aria-expanded="false" aria-controls="#sidebarMenu"
+                    id="sidebarMenuToggle">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>OBIS</span>
+                </a>
+                <div class="mx-3 py-2" id="sidebarMenu">
+                    <a href="#">
+                        <i class="fa-solid fa-table"></i>
+                        Timetable
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-down-1-9"></i>
+                        Semestr Grades </a><a href="#">
+                        <i class="fa-solid fa-person-dots-from-line"></i>
+                        Grade Completion Application </a><a href="#">
+                        <i class="fa-solid fa-person-dots-from-line"></i>
+                        Grade Upgrade Application </a><a href="#">
+                        <i class="fa-solid fa-person-dots-from-line"></i>
+                        Objection Application </a><a href="#">
+                        <i class="fa-solid fa-person-dots-from-line"></i>
+                        Application for Make-up Exam </a><a href="#">
+                        <i class="fa-solid fa-person-dots-from-line"></i>
+                        Dean's Application </a><a href="#">
+                        <i class="fa-solid fa-clipboard"></i>
+                        Transkript
+                    </a>
+                </div>
+            </li>
+            <hr class="divider mb-1" />
+            <div class="d-none d-md-inline mt-2 w-100 text-center">
+                <button
+                    class="d-flex align-items-center justify-content-center btn rounded-circle border-0 text-white text-center m-auto"
+                    id="sidebarBtnToggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="main__content">
+            <div class="mainContentTop">
+                <div class="shadow__box position-absolute w-100 h-100 top-0 start-0 opacity-50">
+                </div>
+                <div class="box bg-white position-absolute text-dark text-center top-50 start-50 translate-middle rounded-3"
+                    id="forgetBox">
+                    <div class="box__error px-4">
+                        <div class="header">
+                            <div
+                                class="icon__box rounded-circle border border-4 m-auto mb-4 d-flex align-items-center justify-content-center">
+                                <div>?</div>
+                            </div>
+                            <h2 id="errorMessage">From Automation System</h2>
+                            <p class="m-0">Are You Sure You Want To Quit?</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 d-inline-block" id="yesBtn">YES</button>
+                        <button class="btn btn-danger mt-3 d-inline-block" id="noBtn">NO</button>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand mb-2 px-3 py-2">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle me-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- Topbar Search -->
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex align-items-center" href="#" id="userDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2 d-none d-lg-inline small" style="color: #3a3b45;" id="userNameAtNav">
+                                    <!-- Anar Kərimov ( Student ) -->
+                                </span>
+                                <i class="fas fa-user-circle fa-lg" style="color: #002F6C ;"> </i>
+                                <img class="ms-2" src="./img/united-states.png" />
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
+                                <a class="dropdown-item py-0 ps-4" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw me-2"></i>
+                                    Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item py-0 ps-4" href="#" data-toggle="modal" id="logOut" name="logOut">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw me-2"></i>
+                                    Log out
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container-fluid px-4">
+                    <div class="row">
+                        <!-- Aktiv Period -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card py-3">
+                                <div class="card-body p-4">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col ps-2">
+                                            <div class="text-xs text-uppercase fw-bold text-primary mb-1">
+                                                active period
+                                            </div>
+                                            <div class="h5 mb-0 fw-bold text-gray-800">
+                                                2021-2022 Summer
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-building-columns"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Last Date of Login -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card py-3" style="border-left-color: #36b9cc">
+                                <div class="card-body p-4">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col ps-2">
+                                            <div class="text-xs text-uppercase fw-bold text-primary mb-1">
+                                                Last Date of login to the system
+                                            </div>
+                                            <div class="h5 mb-0 fw-bold text-gray-800">
+                                                08.08.2022 22:18:17
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-right-to-bracket"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Announcements -->
+                        <div class="col-xl-6 col-md-12 mb-4">
+                            <div class="card" style="border: none">
+                                <div class="card-header py-1">
+                                    <h6 class="m-0 fw-bold px-1">Announcements</h6>
+                                </div>
+                                <div class="card-body p-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center py-1">
+                <span>Copyright © Tüm Hakları Saklıdır 2022</span>
+            </footer>
+        </div>
     </div>
-   </body>
+
+    <!-- Bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+</body>
 
 </html>
