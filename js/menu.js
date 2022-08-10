@@ -1,9 +1,66 @@
 $(()=>{
+
+    // Page Load 
+    loading();
+    function loading() {
+        window.onload = function(){
+            $(".shadow__box").css("display","block");  
+            $(".logoAnimation").css("display","flex");
+            setTimeout(() => {
+                $(".shadow__box").hide();  
+                $(".logoAnimation").hide()
+            }, 3000);
+        }
+    }
+
     // sidebar OBIS toggle 
-    $("#sidebarMenuToggle").click(function(){
-        $("#sidebarMenu").toggle();
-        $("#sidebarMenu").addClass("absolute");
-    });
+    $("#sidebarMenuToggle").on({
+        "click": function(){
+            $("#sidebarMenu").toggle(),
+            $("#sidebarMenu").addClass("absolute");
+        } 
+        });
+
+    // sidebar menu link
+
+   $("#timeTable").click(()=> {
+    $(".mainContentTop").load("./timeTable.html")
+   })
+
+   $("#gradeComp").click(()=> {
+    $(".mainContentTop").load("./gradeComplation.html")
+   })
+
+   $("#gradeUpgrade").click(()=> {
+    $(".mainContentTop").load("./gradeUpgrade.html")
+   })
+
+   $("#semestrGrades").click(()=> {
+    $(".mainContentTop").load("./semestrGrades.html")
+   })
+
+   $("#objectApp").click(()=> {
+    $(".mainContentTop").load("./objectApp.html")
+   })
+
+   $("#appMake").click(()=> {
+    $(".mainContentTop").load("./appMakeUpExam.html")
+   })
+
+   $("#deansApp").click(()=> {
+    $(".mainContentTop").load("./deansApp.html")
+   })
+
+   $("#transkript").click(()=> {
+    $(".mainContentTop").load("./transkript.html")
+   })
+
+
+   //after click menu link
+    $("#sidebarMenu > a").click(function(){
+        $("#sidebarMenu").hide(100)
+    })
+    
 
     // sidebar button at bottom
     $("#sidebarBtnToggle").click(function () {  

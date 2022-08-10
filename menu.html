@@ -35,6 +35,8 @@
 
 <body>
     <div class="wrapper d-flex position-relative">
+        <div class="shadow__box position-absolute w-100 h-100 top-0 start-0 opacity-25">
+        </div>
         <div class="sidebar navbar-nav">
             <a href="#" class="sidebar__brand text-center">
                 <img src="./img/sidebar-amblem.png" alt="Khazar Logo" />
@@ -49,23 +51,28 @@
                     <span>OBIS</span>
                 </a>
                 <div class="mx-3 py-2" id="sidebarMenu">
-                    <a href="#">
+                        <a href="#" role="button" id="timeTable">
                         <i class="fa-solid fa-table"></i>
-                        Timetable
-                    </a>
-                    <a href="#">
+                        Timetable</a>
+                        <a href="#" role="button" id="semestrGrades">
                         <i class="fa-solid fa-arrow-down-1-9"></i>
-                        Semestr Grades </a><a href="#">
+                        Semestr Grades </a>
+                        <a href="#" role="button" id="gradeComp">
                         <i class="fa-solid fa-person-dots-from-line"></i>
-                        Grade Completion Application </a><a href="#">
+                        Grade Completion Application </a>
+                        <a href="#" role="button" id="gradeUpgrade">
                         <i class="fa-solid fa-person-dots-from-line"></i>
-                        Grade Upgrade Application </a><a href="#">
+                        Grade Upgrade Application </a>
+                        <a href="#" role="button" id="objectApp">
                         <i class="fa-solid fa-person-dots-from-line"></i>
-                        Objection Application </a><a href="#">
+                        Objection Application </a>
+                        <a href="#" role="button" id="appMake">
                         <i class="fa-solid fa-person-dots-from-line"></i>
-                        Application for Make-up Exam </a><a href="#">
+                        Application for Make-up Exam </a>
+                        <a href="#" role="button" id="deansApp">
                         <i class="fa-solid fa-person-dots-from-line"></i>
-                        Dean's Application </a><a href="#">
+                        Dean's Application </a>
+                        <a href="#" role="button" id="transkript">
                         <i class="fa-solid fa-clipboard"></i>
                         Transkript
                     </a>
@@ -81,8 +88,43 @@
             </div>
         </div>
         <div class="main__content">
-            <div class="mainContentTop">
-                <div class="shadow__box position-absolute w-100 h-100 top-0 start-0 opacity-50">
+            <nav class="navbar navbar-expand bg-white mb-2 px-3 py-2">
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle me-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Topbar Search -->
+
+                <!-- Topbar Navbar -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="userDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-2 d-none d-lg-inline small" style="color: #3a3b45;" id="userNameAtNav">
+                                <!-- Anar Kərimov ( Student ) -->
+                            </span>
+                            <i class="fas fa-user-circle fa-lg" style="color: #002F6C ;"> </i>
+                            <img class="ms-2" src="./img/united-states.png" />
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
+                            <a class="dropdown-item py-0 ps-4" href="#">
+                                <i class="fas fa-user fa-sm fa-fw me-2"></i>
+                                Profile
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item py-0 ps-4" href="#" data-toggle="modal" id="logOut" name="logOut">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw me-2"></i>
+                                Log out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mainContentTop position-relative">
+                <div class="logoAnimation w-100 h-100 position-absolute align-items-center justify-content-center">
+                    <img src="./img/khazar__logo.png" alt="" style="width: 3rem; animation: circle 3s infinite;">
                 </div>
                 <div class="box bg-white position-absolute text-dark text-center top-50 start-50 translate-middle rounded-3"
                     id="forgetBox">
@@ -99,40 +141,7 @@
                         <button class="btn btn-danger mt-3 d-inline-block" id="noBtn">NO</button>
                     </div>
                 </div>
-                <nav class="navbar navbar-expand mb-2 px-3 py-2">
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle me-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <!-- Topbar Search -->
 
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link d-flex align-items-center" href="#" id="userDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="me-2 d-none d-lg-inline small" style="color: #3a3b45;" id="userNameAtNav">
-                                    <!-- Anar Kərimov ( Student ) -->
-                                </span>
-                                <i class="fas fa-user-circle fa-lg" style="color: #002F6C ;"> </i>
-                                <img class="ms-2" src="./img/united-states.png" />
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
-                                <a class="dropdown-item py-0 ps-4" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw me-2"></i>
-                                    Profile
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item py-0 ps-4" href="#" data-toggle="modal" id="logOut" name="logOut">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw me-2"></i>
-                                    Log out
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="container-fluid px-4">
                     <div class="row">
                         <!-- Aktiv Period -->
@@ -155,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-
+               
                         <!-- Last Date of Login -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card py-3" style="border-left-color: #36b9cc">
@@ -176,7 +185,7 @@
                                 </div>
                             </div>
                         </div>
-
+               
                         <!-- Announcements -->
                         <div class="col-xl-6 col-md-12 mb-4">
                             <div class="card" style="border: none">
@@ -188,8 +197,9 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
-            <footer class="text-center py-1">
+            <footer class="bg-white py-1 d-flex align-items-center justify-content-center">
                 <span>Copyright © Tüm Hakları Saklıdır 2022</span>
             </footer>
         </div>

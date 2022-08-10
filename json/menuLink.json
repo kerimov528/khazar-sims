@@ -1,0 +1,33 @@
+{
+    "timeTable": {
+        "id": "timeTable",
+        "page": "./timeTable.html"
+    },
+    "semestrGrades": {
+        "id": "semestrGrades",
+        "page": "./semestrGrades.html"
+    },
+    "gradeComplation": {
+        "id": "gradeComp",
+        "page": "./gradeComplation.html"
+    },
+    "gradeUpgrade": {
+        "id": "gradeUpgrade",
+        "page": "./gradeUpgrade.html"
+    },
+    "objectApplication": {
+        "id": "objectApp",
+        "page": "./objectApp.html"
+    },"appMakeUpExam": {
+        "id": "appMake",
+        "page": "./appMakeUpExam.html"
+    },
+    "deansApp": {
+        "id": "deansApp",
+        "page": "./deansApp.html"
+    },
+    "transkript": {
+        "id": "transkript",
+        "page": "./transkript.html"
+    }
+}

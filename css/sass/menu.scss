@@ -11,6 +11,12 @@ a {
 
 div.wrapper {
 
+    //shadow box
+    .shadow__box {
+        display: none;
+        @include shadowBox;
+    }
+
     // sidebar
     .sidebar {
         min-width: 6.2rem;
@@ -116,12 +122,33 @@ div.wrapper {
         &.smallContent {
             max-width: calc(100% - 17.813rem);
         }
+        .logoAnimation {
+            display: none;
+        }
+        nav.navbar {
+            height: 2.5rem;
+            @include shadow;
+            .dropdown {
+                .dropdown-menu {
+                    background-color: #CCD5E1;
+                    @include shadow;
+                    font-size: .85rem;
+                }
+            }
+        }
 
         .mainContentTop {
-            min-height: calc(100vh - 2rem);
-            .shadow__box {
-                display: none;
-                @include shadowBox;
+            min-height: calc(100vh - 5rem);
+            @keyframes circle {
+                0% {
+                    transform: rotate(0deg);
+                }
+                50% {
+                    transform: rotate(360deg);
+                }
+                100% {
+                    transform: rotate(calc(360deg * 2));
+                }
             }
             .box {
                 display: none;
@@ -158,39 +185,23 @@ div.wrapper {
         
                 }
             }
-            nav {
-                background-color: #fff;
-                height: 2.5rem;
-                @include shadow;
-                .dropdown {
-                    .dropdown-menu {
-                        background-color: #CCD5E1;
-                        @include shadow;
-                        font-size: .85rem;
-                        .dropdown-item {
-                            // padding: 0.25rem 1.5rem !important;
-                        }
-                    }
-                }
-            }
-
             div.row {
                 .card {
                     border-left: .25rem solid #4e73df;
                     border-radius: .35rem;
                     @include shadow;
-
+            
                     div.text-xs {
                         margin-top: -7px;
                         font-size: .7rem;
                         line-height: 1.5;
                     }
-
+            
                     div.text-gray-800 {
                         font-size: 1.2rem;
                         color: #5a5c69;
                     }
-
+            
                     div.col-auto i {
                         font-size: 2rem;
                         color: #dddfeb;
@@ -200,14 +211,13 @@ div.wrapper {
                     }
                 }
             }
+        
         }
 
         footer {
-            background-color: #fff;
-            vertical-align: middle;
+            height: 2rem;
             @include shadow;
             span {
-                line-height: 1;
                 font-size: .7rem;
                 font-weight: bold;
             }

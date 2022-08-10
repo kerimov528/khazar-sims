@@ -3,19 +3,19 @@ $(() => {
     // Login Animation 
     $("input:first").on({
         "focusin": function () {
-            $(".icon__input:first").addClass("iconAtFocus");
+            $("#icon1").addClass("iconAtFocus");
         },
         "focusout": function () {
-            $(".icon__input:first").removeClass("iconAtFocus");
+            $("#icon1").removeClass("iconAtFocus");
 
         }
     })
-    $("input:last").on({
+    $("input#loginPassword").on({
         "focusin": function () {
-            $(".icon__input:last").addClass("iconAtFocus");
+            $("#icon2").addClass("iconAtFocus");
         },
         "focusout": function () {
-            $(".icon__input:last").removeClass("iconAtFocus");
+            $("#icon2").removeClass("iconAtFocus");
         }
     })
 
@@ -30,8 +30,7 @@ $(() => {
                     $.each(data, function (key, value) {
                         num++;
                         if ($("#username").val() == value.username && $("#loginPassword").val() == value.password) {
-                            alert(value.fullName);
-                            $("#userNameAtNav").text(value.fullName);
+
                             window.location.href = "menu.html";
                         } else {
                             count++;
@@ -70,12 +69,12 @@ $(() => {
                 })
                 if($("#username1").val() == ""){
                     $("#forgetBox .box__content").hide();
-                    $("#forgetBox .box__error").show();
+                    $("#forgetBox .box__error").show(100);
                     $("#forgetBox .box__error h2").text("İstifadəçi adı tələb olunur");
                 }
                 else if (count == num) {
                     $("#forgetBox .box__content").hide();
-                    $("#forgetBox .box__error").show();
+                    $("#forgetBox .box__error").show(100);
                     $("#forgetBox .box__error h2").text("İstifadəçi adı tapılmadı");
                 }
             }

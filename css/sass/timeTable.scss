@@ -1,0 +1,55 @@
+@use "variable"as *;
+
+* {
+    @include reset;
+}
+
+div.container {
+    div.card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid #e3e6f0;
+        border-radius: .35rem;
+        @include shadow;
+
+        .card-header {
+            background-color: #99ABC4 !important;
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            border-bottom: 1px solid #e3e6f0;
+
+            h6 {
+                color: $menuSidebarColor !important;
+            }
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+
+            div.float-end {
+                background: darkblue;
+                color: white !important;
+                font-size: 1rem;
+                text-align: center;
+                border-radius: .4rem;
+            }
+        }
+
+      
+            div.table-responsive {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                th {
+                    background-color: #e5eaf0;
+                }
+            }
+    }
+}
