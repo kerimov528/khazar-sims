@@ -42,14 +42,21 @@ div.container {
             }
         }
 
-      
-            div.table-responsive {
-                display: block;
-                width: 100%;
-                overflow-x: auto;
-                th {
-                    background-color: #e5eaf0;
-                }
+
+        div.table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+
+            th {
+                background-color: #e5eaf0;
             }
+        }
+
+        div#tablo_dersler {
+            th {
+                background-color: #e5eaf0 !important;
+            }
+        }
     }
 }

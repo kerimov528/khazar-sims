@@ -24,35 +24,35 @@ $(()=>{
     // sidebar menu link
 
    $("#timeTable").click(()=> {
-    $(".mainContentTop").load("./timeTable.html")
+    $(".mainContentTop").load("../pages/timeTable.html")
    })
 
    $("#gradeComp").click(()=> {
-    $(".mainContentTop").load("./gradeComplation.html")
+    $(".mainContentTop").load("../pages/gradeComplation.html")
    })
 
    $("#gradeUpgrade").click(()=> {
-    $(".mainContentTop").load("./gradeUpgrade.html")
+    $(".mainContentTop").load("../pages/gradeUpgrade.html")
    })
 
    $("#semestrGrades").click(()=> {
-    $(".mainContentTop").load("./semestrGrades.html")
+    $(".mainContentTop").load("../pages/semestrGrades.html")
    })
 
    $("#objectApp").click(()=> {
-    $(".mainContentTop").load("./objectApp.html")
+    $(".mainContentTop").load("../pages/objectApp.html")
    })
 
    $("#appMake").click(()=> {
-    $(".mainContentTop").load("./appMakeUpExam.html")
+    $(".mainContentTop").load("../pages/appMakeUpExam.html")
    })
 
    $("#deansApp").click(()=> {
-    $(".mainContentTop").load("./deansApp.html")
+    $(".mainContentTop").load("../pages/deansApp.html")
    })
 
    $("#transkript").click(()=> {
-    $(".mainContentTop").load("./transkript.html")
+    $(".mainContentTop").load("../pages/transkript.html")
    })
 
 
