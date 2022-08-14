@@ -4,6 +4,11 @@
     @include reset;
 }
 
+ul,
+li {
+    list-style-type: none;
+}
+
 div.container {
     div.card {
         position: relative;
@@ -33,12 +38,141 @@ div.container {
             min-height: 1px;
             padding: 1.25rem;
 
-            div.float-end {
-                background: darkblue;
-                color: white !important;
+            div.float-start {
+                margin-top: .5rem;
+
+                input {
+                    background-color: #eaecf4;
+                    opacity: 1;
+                    font-size: 0.75rem;
+                }
+                input:not(input#rg_donem) {
+                    width: 55px;
+
+                }
+                label.text-end {
+                    font-size: 1rem !important;
+                }
+            }
+
+            div.float-end.print {
+                background-color: darkblue;
                 font-size: 1rem;
                 text-align: center;
                 border-radius: .4rem;
+                margin-top: -2px;
+                &:hover {
+                    background-color: lightblue;
+                }
+                i {
+                    font-size: 20px;
+                    margin-top: .19rem;
+                }
+            }
+
+            div#dersler {
+                div#secim-panel {
+                    border: 2px solid #6b345f;
+
+                    ul#treeList {
+                        margin-bottom: 5px;
+                        padding-left: 20px;
+                        table#tablo_dersler {
+                            margin-left: -10px;
+                            font-size: 9pt ;
+                            margin-bottom: 3px;
+                            th,td {
+                            padding: .2rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            table#tablo_dersler {
+                margin-left: -10px;
+                font-size: 9pt ;
+                margin-bottom: 3px;
+                th,td {
+                padding: .2rem !important;
+                }
+            }
+
+            div.semestr {
+                margin-top: -3px;
+                label.radio-inline {
+                    margin-top: 3px; 
+                    margin-left: 5px
+                }
+            }
+
+            div.inquire {
+                padding-bottom: 5px;
+                margin-top: -5px;
+                margin-right: 10px;
+                background-color: none !important;
+                button {
+                    position: relative;
+                    bottom: 0;
+                    font-size: 1rem;
+                    &:hover {
+                        background-color: lightgray !important;
+                    }
+                    span {
+                        padding-left: 12px; 
+                        margin-top: -3px;
+                        float: right;
+                    }
+                    i {
+                        padding-top: 2.8px;
+                    }
+                }
+            }
+
+            label.radio-inline span {
+                font-size: .8rem !important;
+            }
+
+            a#kaydet {
+                width: 150px; 
+                margin-left:48px; 
+                margin-top:5px;
+                color: #858796;
+                border: 1px solid transparent;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: .35rem;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                &:hover {
+                    background-color: lightblue !important;
+                }
+                i {
+                    font-size: 20px;
+                    float: right;
+                    padding-top: 3px;
+                }
+            }
+
+            div#basvurular, div#transkript {
+                table {
+                    font-size: 9pt;
+                }
+
+                table#tablo th {
+                    background-color: #e5eaf0;
+                }
+                th,td {
+                    padding: .2rem !important;
+                }
+            }
+            div#dersprogrami {
+                table {
+                    font-size: 8.5pt;
+                    tbody tr td:first-child {
+                        line-height: 30px !important;
+                    }
+                }
             }
         }
 
@@ -47,16 +181,18 @@ div.container {
             display: block;
             width: 100%;
             overflow-x: auto;
-
-            th {
-                background-color: #e5eaf0;
-            }
-        }
-
-        div#tablo_dersler {
-            th {
-                background-color: #e5eaf0 !important;
-            }
         }
     }
+}
+
+
+table th {
+    background-color: #e5eaf0 !important;
+}
+
+.parent-menu {
+    cursor: pointer;
+}
+.form-control-sm {
+    font-size: 0.75rem !important;
 }

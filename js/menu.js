@@ -1,17 +1,52 @@
 $(()=>{
 
     // Page Load 
-    loading();
-    function loading() {
-        window.onload = function(){
-            $(".shadow__box").css("display","block");  
-            $(".logoAnimation").css("display","flex");
-            setTimeout(() => {
-                $(".shadow__box").hide();  
-                $(".logoAnimation").hide()
-            }, 3000);
-        }
-    }
+    // loading();
+    // function loading() {
+    //     window.onload = function(){
+    //         $(".shadow__box").css("display","block");  
+    //         $(".logoAnimation").css("display","flex");
+    //         setTimeout(() => {
+    //             $(".shadow__box").hide();  
+    //             $(".logoAnimation").hide()
+    //         }, 3000);
+    //     }
+    // }
+
+    // $(window).on('load', function () {
+    //     $(".Loading").hide();
+    // });
+    // window.onbeforeunload = Call();
+
+    // function Call() {
+    //     $(".Loading").show();
+
+        //$(document).ready(function () {
+            //window.location = "/cikis-yap";
+        //});
+
+    // }
+
+      //function LogOff() {
+
+
+
+
+        //    $.ajax({
+        //        url: "/cikis-yap",
+        //       success: function (result) {
+        //           window.location = "/Security/Login";
+
+        //        }
+        //    });
+
+        //}
+
+        //window.addEventListener('beforeunload', function (e) {
+        //    e.preventDefault();
+        //    e.returnValue = '';
+
+        //});
 
     // sidebar OBIS toggle 
     $("#sidebarMenuToggle").on({
@@ -85,4 +120,28 @@ $(()=>{
             $("#userNameAtNav").text("Tamam");
         })
     })
+
+
+    // Application makeUp Exam 
+
+    // $('#treeList :checkbox').change(function () {
+    //     $(this).siblings('ul').find(':checkbox').prop('checked', this.checked);
+    //     if (this.checked) {
+    //         $(this).parentsUntil('#treeList', 'ul').siblings(':checkbox').prop('checked', true);
+    //     } else {
+    //         $(this).parentsUntil('#treeList', 'ul').each(function () {
+    //             var $this = $(this);
+    //             var childSelected = $this.find(':checkbox:checked').length;
+    //             if (!childSelected) {
+    //                 $this.prev(':checkbox').prop('checked', false);
+    //             }
+    //         });
+    //     }
+    // });
+
+    // $('.parent-menu ul').hide();
+    // $('.parent-menu span').click(function () {
+    //     $(this).parent().find('ul').slideToggle();
+    // });
+
 })
