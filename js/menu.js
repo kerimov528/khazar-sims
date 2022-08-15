@@ -1,17 +1,49 @@
 $(()=>{
 
-    // Page Load 
+    // functions 
     // loading();
-    // function loading() {
-    //     window.onload = function(){
-    //         $(".shadow__box").css("display","block");  
-    //         $(".logoAnimation").css("display","flex");
-    //         setTimeout(() => {
-    //             $(".shadow__box").hide();  
-    //             $(".logoAnimation").hide()
-    //         }, 3000);
-    //     }
-    // }
+
+    // Page Load 
+    function loading() {
+        window.onload = function(){
+            $(".shadow__box").css("display","block");  
+            $(".logoAnimation").css("display","flex");
+            setTimeout(() => {
+                $(".shadow__box").hide();  
+                $(".logoAnimation").hide()
+            }, 3000);
+        }
+    }
+
+    //getJson transkript.json
+    $("#transkript").click(()=> {
+        $.getJSON("./json/transkript.json", 
+        (data) => {
+
+            var str = "";
+            $.each(data,(key,value)=> {
+                // console.log(value.name, value.subjects[0].courseName);
+
+                if(value.name == "Anar"){
+                    for (let i = 0; i < value.subjects.length; i++) {
+                        console.log(value.name, value.subjects[i].courseName,"str =>", str);
+                        str += `<tr>`;
+                        str += `<td>`;
+                        str += value.subjects[i].courseName; 
+                        str += `</td>`;
+                        str += `</tr>`;
+                    }
+                }
+
+                console.log($("div#result").html());
+                $("div#result table tbody").html(str);
+            })
+        }
+    );
+    });
+  
+
+  
 
     // $(window).on('load', function () {
     //     $(".Loading").hide();
@@ -91,13 +123,13 @@ $(()=>{
    })
 
 
-   //after click menu link
-    $("#sidebarMenu > a").click(function(){
+   //after click another place when open menu link
+    $("#sidebarMenu > a , .mainContentTop").click(function(){
         $("#sidebarMenu").hide(100)
     })
     
 
-    // sidebar button at bottom
+   // sidebar button at bottom
     $("#sidebarBtnToggle").click(function () {  
         $("#sidebarMenu").removeClass("absolute");
         $("div.main__content").toggleClass("smallContent");
@@ -105,21 +137,21 @@ $(()=>{
     })
 
     //Log Out 
-    $("#logOut").click(function(){
-        $(".shadow__box").show(100);
-        $("#forgetBox").show();
+    // $("#logOut").click(function(){
+    //     $(".shadow__box").show(100);
+    //     $("#forgetBox").show();
         
-        $("#yesBtn").click(function () {
-            $(".shadow__box").hide(100);
-            $("#forgetBox").hide();
-            window.location.href = "login.html";
-        })
-        $("#noBtn").click(function () {
-            $(".shadow__box").hide(100);
-            $("#forgetBox").hide();
-            $("#userNameAtNav").text("Tamam");
-        })
-    })
+    //     $("#yesBtn").click(function () {
+    //         $(".shadow__box").hide(100);
+    //         $("#forgetBox").hide();
+    //         window.location.href = "login.html";
+    //     })
+    //     $("#noBtn").click(function () {
+    //         $(".shadow__box").hide(100);
+    //         $("#forgetBox").hide();
+    //         $("#userNameAtNav").text("Tamam");
+    //     })
+    // })
 
 
     // Application makeUp Exam 

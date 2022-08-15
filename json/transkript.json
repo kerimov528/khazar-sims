@@ -1,0 +1,1044 @@
+[
+    {
+        "name" : "Anar",
+        "subjects" : [
+            {
+                "codeName": "MATH",
+                "code": 231,
+                "courseName": "Applied Linear Algebra",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 60
+            },
+            {
+                "codeName": "MATH",
+                "code": 340,
+                "courseName": "Applied Statistical Analysis",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 79
+            },
+            {
+                "codeName": "AZC",
+                "code": "201e",
+                "courseName": "Azerbaijani Culture",
+                "lang": "AZ",
+                "credit": 2.0,
+                "ECTS": 4,
+                "grade": 100
+            },
+            {
+                "codeName": "AZLL",
+                "code": "101",
+                "courseName": "Azerbaijani Language",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 87
+            },
+            {
+                "codeName": "MATH",
+                "code": "101",
+                "courseName": "Calculus-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 76
+            },
+            {
+                "codeName": "MATH",
+                "code": "102",
+                "courseName": "Calculus-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 93
+            },
+            {
+                "codeName": "CMS",
+                "code": "410",
+                "courseName": "Cisco Certificate Networks administrator-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 82
+            },
+            {
+                "codeName": "CMS",
+                "code": "115",
+                "courseName": "Computer Application in Enginnering",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 74
+            },
+            {
+                "codeName": "CMS",
+                "code": "115",
+                "courseName": "Computer Application in Enginnering",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 41
+            },
+            {
+                "codeName": "CMS",
+                "code": "309",
+                "courseName": "Computer Networks",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "CMS",
+                "code": "241",
+                "courseName": "Computer Organization and System Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 73
+            },
+            {
+                "codeName": "CMS",
+                "code": "215",
+                "courseName": "Data Structure",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 88
+            },
+            {
+                "codeName": "CMS",
+                "code": "215",
+                "courseName": "Database Management Systems",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 95
+            },
+            {
+                "codeName": "ENGL",
+                "code": "216",
+                "courseName": "English for Special Purposes",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "ENGL",
+                "code": "101",
+                "courseName": "English Foundation-1",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 83
+            },
+            {
+                "codeName": "ENGL",
+                "code": "102",
+                "courseName": "English Foundation-2",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 99
+            },
+            {
+                "codeName": "CMS",
+                "code": 140,
+                "courseName": "Fundamentals of Computer Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 94
+            },
+            {
+                "codeName": "CMS",
+                "code": 140,
+                "courseName": "Fundamentals of Computer Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 66
+            },
+            {
+                "codeName": "GERM",
+                "code": 201,
+                "courseName": "German Language-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 94
+            },
+            {
+                "codeName": "AZH",
+                "code": 150,
+                "courseName": "History of Azerbaijan",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "MATH",
+                "code": 330,
+                "courseName": "Introduction to Discrete Mathematics",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "ECON",
+                "code": 101,
+                "courseName": "Introduction to Economics",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 98
+            },
+            {
+                "codeName": "PHIL",
+                "code": 101,
+                "courseName": "Introduction to philosophy",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 86
+            },
+            {
+                "codeName": "CMS",
+                "code": 370,
+                "courseName": "Introduction to Theory of Computation",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 93
+            },
+            {
+                "codeName": "LAW",
+                "code": 102,
+                "courseName": "Law Enforcement Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 93
+            },
+            {
+                "codeName": "CMS",
+                "code": 205,
+                "courseName": "Object Oriented Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 100
+            },
+            {
+                "codeName": "CMS",
+                "code": 362,
+                "courseName": "Operating Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "CMS",
+                "code": 360,
+                "courseName": "Operations Research and Optimization",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 71
+            },
+            {
+                "codeName": "PHSC",
+                "code": 111,
+                "courseName": "Physics-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 94
+            },
+            {
+                "codeName": "PHSC",
+                "code": 112,
+                "courseName": "Physics-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "EENG",
+                "code": 302,
+                "courseName": "Signals and Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 87
+            },
+            {
+                "codeName": "CMS",
+                "code": 220,
+                "courseName": " Web Programming-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 95
+            },
+            {
+                "codeName": "CMS",
+                "code": 250,
+                "courseName": " Web Programming-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 92
+            },
+            {
+                "general": "Total",
+                "gCredit": 95.0,
+                "gECTS": 190
+            },
+            {
+                "general": "Total Weighted",
+                "gCredit": 8373.0,
+                "gECTS": 16746.0
+            },
+            {
+                "general": "Average",
+                "gCredit": 88.14,
+                "gECTS": 88.14
+            }
+        ]
+
+    },
+    {
+        "name": "X",
+        "subjects" : [
+            {
+                "codeName": "PHIL",
+                "code": 110,
+                "courseName": "Actual Problems of Religion",
+                "lang": "AZ",
+                "credit": "",
+                "ECTS": "",
+                "grade": 55
+            },
+            {
+                "codeName": "MATH",
+                "code": 231,
+                "courseName": "Applied Linear Algebra",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 84
+            },
+            {
+                "codeName": "MATH",
+                "code": 340,
+                "courseName": "Applied Statistical Analysis",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 96
+            },
+            {
+                "codeName": "AZC",
+                "code": "201e",
+                "courseName": "Azerbaijani Culture",
+                "lang": "AZ",
+                "credit": 2.0,
+                "ECTS": 4,
+                "grade": 75
+            },
+            {
+                "codeName": "AZLL",
+                "code": "101",
+                "courseName": "Azerbaijani Language",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 85
+            },
+            {
+                "codeName": "MED",
+                "code": "315",
+                "courseName": "Basics of civil protection and medical knowledge",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 91
+            },
+            {
+                "codeName": "MATH",
+                "code": "101",
+                "courseName": "Calculus-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 64
+            },
+            {
+                "codeName": "MATH",
+                "code": "102",
+                "courseName": "Calculus-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 60
+            },
+            {
+                "codeName": "CMS",
+                "code": "410",
+                "courseName": "Cisco Certificate Networks administrator-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 60
+            },
+            {
+                "codeName": "CMS",
+                "code": "115",
+                "courseName": "Computer Application in Enginnering",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 83
+            },
+            {
+                "codeName": "CMS",
+                "code": "309",
+                "courseName": "Computer Networks",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 66
+            },
+            {
+                "codeName": "CMS",
+                "code": "241",
+                "courseName": "Computer Organization and System Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 82
+            },
+            {
+                "codeName": "TURK",
+                "code": "315s",
+                "courseName": "Culture of Turkish World",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 78
+            },
+            {
+                "codeName": "CMS",
+                "code": "215",
+                "courseName": "Data Structure",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 79
+            },
+            {
+                "codeName": "CMS",
+                "code": "215",
+                "courseName": "Database Management Systems",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 98
+            },
+            {
+                "codeName": "CMS",
+                "code": "363",
+                "courseName": "Digital Logic",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 95
+            },
+            {
+                "codeName": "EENG",
+                "code": "245",
+                "courseName": "Electronics",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 70
+            },
+            {
+                "codeName": "ENGL",
+                "code": "216",
+                "courseName": "English for Special Purposes",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 61
+            },
+            {
+                "codeName": "ENGL",
+                "code": "101",
+                "courseName": "English Foundation-1",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 50
+            },
+            {
+                "codeName": "ENGL",
+                "code": "101",
+                "courseName": "English Foundation-1",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 55
+            },
+            {
+                "codeName": "ENGL",
+                "code": "101",
+                "courseName": "English Foundation-1",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 74
+            },
+            {
+                "codeName": "ENGL",
+                "code": "102",
+                "courseName": "English Foundation-2",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 93
+            },
+            {
+                "codeName": "CMS",
+                "code": 140,
+                "courseName": "Fundamentals of Computer Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 20
+            },
+            {
+                "codeName": "FREN",
+                "code": 201,
+                "courseName": "French-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 93
+            },
+            {
+                "codeName": "CMS",
+                "code": 453,
+                "courseName": "Game Development",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 60
+            },
+            {
+                "codeName": "AZH",
+                "code": 150,
+                "courseName": "History of Azerbaijan",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 50
+            },
+            {
+                "codeName": "AZH",
+                "code": 150,
+                "courseName": "History of Azerbaijan",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 90
+            },
+            {
+                "codeName": "CMS",
+                "code": 451,
+                "courseName": "Information and Computer Security",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 77
+            },
+            {
+                "codeName": "MATH",
+                "code": 330,
+                "courseName": "Introduction to Discrete Mathematics",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 94
+            },
+            {
+                "codeName": "ECON",
+                "code": 101,
+                "courseName": "Introduction to Economics",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 92
+            },
+            {
+                "codeName": "CMS",
+                "code": 401,
+                "courseName": "Introduction to Robotics",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 91
+            },
+            {
+                "codeName": "CMS",
+                "code": 370,
+                "courseName": "Introduction to Theory of Computation",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 85
+            },
+            {
+                "codeName": "LAW",
+                "code": 102,
+                "courseName": "Law Enforcement Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 83
+            },
+            {
+                "codeName": "CMS",
+                "code": 535,
+                "courseName": "Multimedia Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 84
+            },
+            {
+                "codeName": "CMS",
+                "code": 205,
+                "courseName": "Object Oriented Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 86
+            },
+            {
+                "codeName": "CMS",
+                "code": 362,
+                "courseName": "Operating Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 95
+            },
+            {
+                "codeName": "CMS",
+                "code": 360,
+                "courseName": "Operations Research and Optimization",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 83
+            },
+            {
+                "codeName": "PHSC",
+                "code": 111,
+                "courseName": "Physics-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 67
+            },
+            {
+                "codeName": "PHSC",
+                "code": 112,
+                "courseName": "Physics-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 44
+            },
+            {
+                "codeName": "PHSC",
+                "code": 112,
+                "courseName": "Physics-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 83
+            },
+            {
+                "codeName": "EENG",
+                "code": 302,
+                "courseName": "Signals and Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 67
+            },
+            {
+                "codeName": "EENG",
+                "code": 430,
+                "courseName": "Software Engineering",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 92
+            },
+            {
+                "codeName": "CMS",
+                "code": 220,
+                "courseName": " Web Programming-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 27
+            },
+            {
+                "codeName": "CMS",
+                "code": 220,
+                "courseName": " Web Programming-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 85
+            },
+            {
+                "codeName": "CMS",
+                "code": 250,
+                "courseName": " Web Programming-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 90
+            },
+            {
+                "general": "Total",
+                "gCredit": 122.00,
+                "gECTS": 244.0
+            },
+            {
+                "general": "Total Weighted",
+                "gCredit": 9905.00,
+                "gECTS": 19810.00
+            },
+            {
+                "general": "Average",
+                "gCredit": 81.19,
+                "gECTS": 81.19
+            }
+        ]
+    },
+    {
+        "name": "Y",
+        "subjects" : [
+            {
+                "codeName": "MATH",
+                "code": 231,
+                "courseName": "Applied Linear Algebra",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 66
+            },
+            {
+                "codeName": "MATH",
+                "code": 340,
+                "courseName": "Applied Statistical Analysis",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 86
+            },
+            {
+                "codeName": "AZC",
+                "code": "201e",
+                "courseName": "Azerbaijani Culture",
+                "lang": "AZ",
+                "credit": 2.0,
+                "ECTS": 4,
+                "grade": 95
+            },
+            {
+                "codeName": "AZLL",
+                "code": "101",
+                "courseName": "Azerbaijani Language",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 88
+            },
+            {
+                "codeName": "MATH",
+                "code": "101",
+                "courseName": "Calculus-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 71
+            },
+            {
+                "codeName": "MATH",
+                "code": "102",
+                "courseName": "Calculus-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 95
+            },
+            {
+                "codeName": "CMS",
+                "code": "410",
+                "courseName": "Cisco Certificate Networks administrator-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 82
+            },
+            {
+                "codeName": "CMS",
+                "code": "115",
+                "courseName": "Computer Application in Enginnering",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 73
+            },
+            {
+                "codeName": "CMS",
+                "code": "309",
+                "courseName": "Computer Networks",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 98
+            },
+            {
+                "codeName": "CMS",
+                "code": "241",
+                "courseName": "Computer Organization and System Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 88
+            },
+            {
+                "codeName": "CMS",
+                "code": "215",
+                "courseName": "Data Structure",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 85
+            },
+            {
+                "codeName": "CMS",
+                "code": "215",
+                "courseName": "Database Management Systems",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 88
+            },
+            {
+                "codeName": "ENGL",
+                "code": "216",
+                "courseName": "English for Special Purposes",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 88
+            },
+            {
+                "codeName": "ENGL",
+                "code": "101",
+                "courseName": "English Foundation-1",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 81
+            },
+            {
+                "codeName": "ENGL",
+                "code": "102",
+                "courseName": "English Foundation-2",
+                "lang": "AZ",
+                "credit": 4.0,
+                "ECTS": 8,
+                "grade": 100
+            },
+            {
+                "codeName": "CMS",
+                "code": 140,
+                "courseName": "Fundamentals of Computer Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 81
+            },
+            {
+                "codeName": "GERM",
+                "code": 201,
+                "courseName": "German Language-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 95
+            },
+            {
+                "codeName": "AZH",
+                "code": 150,
+                "courseName": "History of Azerbaijan",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 90
+            },
+            {
+                "codeName": "MATH",
+                "code": 330,
+                "courseName": "Introduction to Discrete Mathematics",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 97
+            },
+            {
+                "codeName": "ECON",
+                "code": 101,
+                "courseName": "Introduction to Economics",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 97
+            },
+            {
+                "codeName": "PHIL",
+                "code": 101,
+                "courseName": "Introduction to philosophy",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 87
+            },
+            {
+                "codeName": "CMS",
+                "code": 370,
+                "courseName": "Introduction to Theory of Computation",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 94
+            },
+            {
+                "codeName": "LAW",
+                "code": 102,
+                "courseName": "Law Enforcement Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 92
+            },
+            {
+                "codeName": "CMS",
+                "code": 205,
+                "courseName": "Object Oriented Programming",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 60
+            },
+            {
+                "codeName": "CMS",
+                "code": 362,
+                "courseName": "Operating Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 90
+            },
+            {
+                "codeName": "CMS",
+                "code": 360,
+                "courseName": "Operations Research and Optimization",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 87
+            },
+            {
+                "codeName": "PHSC",
+                "code": 111,
+                "courseName": "Physics-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 83
+            },
+            {
+                "codeName": "PHSC",
+                "code": 112,
+                "courseName": "Physics-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 98
+            },
+            {
+                "codeName": "EENG",
+                "code": 302,
+                "courseName": "Signals and Systems",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 84
+            },
+            {
+                "codeName": "CMS",
+                "code": 220,
+                "courseName": " Web Programming-1",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 83
+            },
+            {
+                "codeName": "CMS",
+                "code": 250,
+                "courseName": " Web Programming-2",
+                "lang": "AZ",
+                "credit": 3.0,
+                "ECTS": 6,
+                "grade": 88
+            },
+            {
+                "general": "Total",
+                "gCredit": 95.00,
+                "gECTS": 190
+            },
+            {
+                "general": "Total Weighted",
+                "gCredit": 8244.00,
+                "gECTS": 16488.00
+            },
+            {
+                "general": "Average",
+                "gCredit": 86.78,
+                "gECTS": 86.78
+            }
+        ]
+    }
+]

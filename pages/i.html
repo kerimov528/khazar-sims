@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/khazar__logo.png" type="image/x-icon" />
+
+    <!-- Google Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fontawasome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+        integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/menu.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
+
+    <title>Xəzər Universiteti</title>
+</head>
+
+<body>
+
+    
+    <div id="result" class="container text-center bg-warning text-dark">
+        <table class="table table-striped border-1 table-danger">
+            <thead>
+                <th>Course Name</th>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+        <script>
+
+            $(()=> {
+                $(window).on("load", ()=> {
+        $.getJSON("../json/transkript.json", 
+        (data) => {
+
+            var str = "";
+            $.each(data,(key,value)=> {
+                // console.log(value.name, value.subjects[0].courseName);
+
+                if(value.name == "Anar"){
+                    for (let i = 0; i < value.subjects.length; i++) {
+                        console.log(value.name, value.subjects[i].courseName,"str =>", str);
+                        str += `<tr>`;
+                        str += `<td>`;
+                        str += value.subjects[i].courseName; 
+                        str += `</td>`;
+                        str += `<td>`;
+                        str += value.subjects[i].grade; 
+                        str += `</td>`;
+                        str += `</tr>`;
+                    }
+                }
+
+                console.log($("div#result").html());
+                $("div#result table tbody").html(str);
+            })
+        }
+    );
+    });
+            })
+
+        </script>
+</body>
+</html>
