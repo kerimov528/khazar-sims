@@ -298,16 +298,18 @@
                 "credit": 3.0,
                 "ECTS": 6,
                 "grade": 92
-            },
+            }
+        ],
+        "general" : [
             {
                 "general": "Total",
-                "gCredit": 95.0,
+                "gCredit": 95.00,
                 "gECTS": 190
             },
             {
                 "general": "Total Weighted",
-                "gCredit": 8373.0,
-                "gECTS": 16746.0
+                "gCredit": 8373.00,
+                "gECTS": 16746.00
             },
             {
                 "general": "Average",
@@ -724,9 +726,12 @@
                 "credit": 3.0,
                 "ECTS": 6,
                 "grade": 90
-            },
+            }
+          
+        ],
+        "general" : [
             {
-                "general": "Total",
+                "general": "TOTAL",
                 "gCredit": 122.00,
                 "gECTS": 244.0
             },
@@ -1023,9 +1028,11 @@
                 "credit": 3.0,
                 "ECTS": 6,
                 "grade": 88
-            },
+            }       
+        ],
+        "general" : [
             {
-                "general": "Total",
+                "general": "TOTAL",
                 "gCredit": 95.00,
                 "gECTS": 190
             },

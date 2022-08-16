@@ -158,12 +158,9 @@ div.container {
                 table {
                     font-size: 9pt;
                 }
-
-                table#tablo th {
-                    background-color: #e5eaf0;
-                }
+                
                 th,td {
-                    padding: .2rem !important;
+                    padding: .1rem !important;
                 }
             }
             div#dersprogrami {
@@ -195,4 +192,16 @@ table th {
 }
 .form-control-sm {
     font-size: 0.75rem !important;
+}
+.text-red {
+    color: red;
+}
+.bg-aquamarine {
+    background: aquamarine !important;
+}
+
+#tablo_ortalama1 {
+    td,th {
+        padding: 0.1rem !important;
+    }
 }

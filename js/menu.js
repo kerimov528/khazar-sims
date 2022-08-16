@@ -1,49 +1,22 @@
-$(()=>{
+$(() => {
 
     // functions 
     // loading();
 
     // Page Load 
     function loading() {
-        window.onload = function(){
-            $(".shadow__box").css("display","block");  
-            $(".logoAnimation").css("display","flex");
+        window.onload = function () {
+            $(".shadow__box").css("display", "block");
+            $(".logoAnimation").css("display", "flex");
             setTimeout(() => {
-                $(".shadow__box").hide();  
+                $(".shadow__box").hide();
                 $(".logoAnimation").hide()
             }, 3000);
         }
     }
 
-    //getJson transkript.json
-    $("#transkript").click(()=> {
-        $.getJSON("./json/transkript.json", 
-        (data) => {
 
-            var str = "";
-            $.each(data,(key,value)=> {
-                // console.log(value.name, value.subjects[0].courseName);
 
-                if(value.name == "Anar"){
-                    for (let i = 0; i < value.subjects.length; i++) {
-                        console.log(value.name, value.subjects[i].courseName,"str =>", str);
-                        str += `<tr>`;
-                        str += `<td>`;
-                        str += value.subjects[i].courseName; 
-                        str += `</td>`;
-                        str += `</tr>`;
-                    }
-                }
-
-                console.log($("div#result").html());
-                $("div#result table tbody").html(str);
-            })
-        }
-    );
-    });
-  
-
-  
 
     // $(window).on('load', function () {
     //     $(".Loading").hide();
@@ -53,84 +26,84 @@ $(()=>{
     // function Call() {
     //     $(".Loading").show();
 
-        //$(document).ready(function () {
-            //window.location = "/cikis-yap";
-        //});
+    //$(document).ready(function () {
+    //window.location = "/cikis-yap";
+    //});
 
     // }
 
-      //function LogOff() {
+    //function LogOff() {
 
 
 
 
-        //    $.ajax({
-        //        url: "/cikis-yap",
-        //       success: function (result) {
-        //           window.location = "/Security/Login";
+    //    $.ajax({
+    //        url: "/cikis-yap",
+    //       success: function (result) {
+    //           window.location = "/Security/Login";
 
-        //        }
-        //    });
+    //        }
+    //    });
 
-        //}
+    //}
 
-        //window.addEventListener('beforeunload', function (e) {
-        //    e.preventDefault();
-        //    e.returnValue = '';
+    //window.addEventListener('beforeunload', function (e) {
+    //    e.preventDefault();
+    //    e.returnValue = '';
 
-        //});
+    //});
 
     // sidebar OBIS toggle 
     $("#sidebarMenuToggle").on({
-        "click": function(){
+        "click": function () {
             $("#sidebarMenu").toggle(),
-            $("#sidebarMenu").addClass("absolute");
-        } 
-        });
+                $("#sidebarMenu").addClass("absolute");
+        }
+    });
 
     // sidebar menu link
 
-   $("#timeTable").click(()=> {
-    $(".mainContentTop").load("../pages/timeTable.html")
-   })
+    $("#timeTable").click(() => {
+        $(".mainContentTop").load("../pages/timeTable.html")
+    })
 
-   $("#gradeComp").click(()=> {
-    $(".mainContentTop").load("../pages/gradeComplation.html")
-   })
+    $("#gradeComp").click(() => {
+        $(".mainContentTop").load("../pages/gradeComplation.html")
+    })
 
-   $("#gradeUpgrade").click(()=> {
-    $(".mainContentTop").load("../pages/gradeUpgrade.html")
-   })
+    $("#gradeUpgrade").click(() => {
+        $(".mainContentTop").load("../pages/gradeUpgrade.html")
+    })
 
-   $("#semestrGrades").click(()=> {
-    $(".mainContentTop").load("../pages/semestrGrades.html")
-   })
+    $("#semestrGrades").click(() => {
+        $(".mainContentTop").load("../pages/semestrGrades.html")
+    })
 
-   $("#objectApp").click(()=> {
-    $(".mainContentTop").load("../pages/objectApp.html")
-   })
+    $("#objectApp").click(() => {
+        $(".mainContentTop").load("../pages/objectApp.html")
+    })
 
-   $("#appMake").click(()=> {
-    $(".mainContentTop").load("../pages/appMakeUpExam.html")
-   })
+    $("#appMake").click(() => {
+        $(".mainContentTop").load("../pages/appMakeUpExam.html")
+    })
 
-   $("#deansApp").click(()=> {
-    $(".mainContentTop").load("../pages/deansApp.html")
-   })
+    $("#deansApp").click(() => {
+        $(".mainContentTop").load("../pages/deansApp.html")
+    })
 
-   $("#transkript").click(()=> {
-    $(".mainContentTop").load("../pages/transkript.html")
-   })
+    $("#transkript").click(() => {
+        $(".mainContentTop").load("../pages/transkript.html")
+    })
 
 
-   //after click another place when open menu link
-    $("#sidebarMenu > a , .mainContentTop").click(function(){
+    //after click another place when open menu link
+    $("#sidebarMenu > a , .mainContentTop").click(function () {
         $("#sidebarMenu").hide(100)
     })
-    
 
-   // sidebar button at bottom
-    $("#sidebarBtnToggle").click(function () {  
+
+    // sidebar button at bottom
+    $("#sidebarBtnToggle").click(function () {
         $("#sidebarMenu").removeClass("absolute");
         $("div.main__content").toggleClass("smallContent");
         $("#sidebarMenu").toggle();
@@ -140,7 +113,7 @@ $(()=>{
     // $("#logOut").click(function(){
     //     $(".shadow__box").show(100);
     //     $("#forgetBox").show();
-        
+
     //     $("#yesBtn").click(function () {
     //         $(".shadow__box").hide(100);
     //         $("#forgetBox").hide();
