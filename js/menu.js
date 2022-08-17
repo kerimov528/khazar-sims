@@ -1,57 +1,26 @@
 $(() => {
 
     // functions 
-    // loading();
+    loading();
+    getName();
+    loadMenuLinks();
 
     // Page Load 
     function loading() {
         window.onload = function () {
-            $(".shadow__box").css("display", "block");
             $(".logoAnimation").css("display", "flex");
             setTimeout(() => {
-                $(".shadow__box").hide();
                 $(".logoAnimation").hide()
             }, 3000);
         }
     }
 
-
-
-
-    // $(window).on('load', function () {
-    //     $(".Loading").hide();
-    // });
-    // window.onbeforeunload = Call();
-
-    // function Call() {
-    //     $(".Loading").show();
-
-    //$(document).ready(function () {
-    //window.location = "/cikis-yap";
-    //});
-
-    // }
-
-    //function LogOff() {
-
-
-
-
-    //    $.ajax({
-    //        url: "/cikis-yap",
-    //       success: function (result) {
-    //           window.location = "/Security/Login";
-
-    //        }
-    //    });
-
-    //}
-
-    //window.addEventListener('beforeunload', function (e) {
-    //    e.preventDefault();
-    //    e.returnValue = '';
-
-    //});
+    //Getting Your Name to Navbar section
+    function getName() {
+        setTimeout(() => {
+            $("span#userNameAtNav").html(localStorage.getItem("nameOfStudent"));
+        }, 1000);
+    }
 
     // sidebar OBIS toggle 
     $("#sidebarMenuToggle").on({
@@ -61,40 +30,29 @@ $(() => {
         }
     });
 
+
     // sidebar menu link
 
-    $("#timeTable").click(() => {
-        $(".mainContentTop").load("../pages/timeTable.html")
-    })
+    function loadMenuLinks() {
+    let menuLinks = [
+        'timeTable',
+        'gradeComplation',
+        'gradeUpgrade',
+        'semestrGrades',
+        'objectApp',
+        'appMakeUpExam',
+        'deansApp',
+        'transkript',
+        'menu'
+    ]
 
-    $("#gradeComp").click(() => {
-        $(".mainContentTop").load("../pages/gradeComplation.html")
-    })
-
-    $("#gradeUpgrade").click(() => {
-        $(".mainContentTop").load("../pages/gradeUpgrade.html")
-    })
-
-    $("#semestrGrades").click(() => {
-        $(".mainContentTop").load("../pages/semestrGrades.html")
-    })
-
-    $("#objectApp").click(() => {
-        $(".mainContentTop").load("../pages/objectApp.html")
-    })
-
-    $("#appMake").click(() => {
-        $(".mainContentTop").load("../pages/appMakeUpExam.html")
-    })
-
-    $("#deansApp").click(() => {
-        $(".mainContentTop").load("../pages/deansApp.html")
-    })
-
-    $("#transkript").click(() => {
-        $(".mainContentTop").load("../pages/transkript.html")
-    })
-
+    menuLinks.forEach(menuLink => {
+        $("#" + menuLink).click(()=> {
+            (menuLink == "menu") ? ( window.location = "menu.html" ) : (
+            $(".mainContentTop").load("../pages/" + menuLink + ".html"))
+        })
+    });
+}
 
     //after click another place when open menu link
     $("#sidebarMenu > a , .mainContentTop").click(function () {
@@ -109,44 +67,23 @@ $(() => {
         $("#sidebarMenu").toggle();
     })
 
-    //Log Out 
-    // $("#logOut").click(function(){
-    //     $(".shadow__box").show(100);
-    //     $("#forgetBox").show();
+    // Log Out 
 
-    //     $("#yesBtn").click(function () {
-    //         $(".shadow__box").hide(100);
-    //         $("#forgetBox").hide();
-    //         window.location.href = "login.html";
-    //     })
-    //     $("#noBtn").click(function () {
-    //         $(".shadow__box").hide(100);
-    //         $("#forgetBox").hide();
-    //         $("#userNameAtNav").text("Tamam");
-    //     })
-    // })
-
-
-    // Application makeUp Exam 
-
-    // $('#treeList :checkbox').change(function () {
-    //     $(this).siblings('ul').find(':checkbox').prop('checked', this.checked);
-    //     if (this.checked) {
-    //         $(this).parentsUntil('#treeList', 'ul').siblings(':checkbox').prop('checked', true);
-    //     } else {
-    //         $(this).parentsUntil('#treeList', 'ul').each(function () {
-    //             var $this = $(this);
-    //             var childSelected = $this.find(':checkbox:checked').length;
-    //             if (!childSelected) {
-    //                 $this.prev(':checkbox').prop('checked', false);
-    //             }
-    //         });
-    //     }
-    // });
-
-    // $('.parent-menu ul').hide();
-    // $('.parent-menu span').click(function () {
-    //     $(this).parent().find('ul').slideToggle();
-    // });
+    $("a#logOut").click(function () {
+        Swal.fire({
+            title: 'From Automation System',
+            text: "Are You Sure You Want To Quit?",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = 'login.html';
+            }
+        })
+    })
 
 })

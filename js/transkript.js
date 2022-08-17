@@ -9,8 +9,11 @@ $(() => {
                 $("tbody#transkriptSubjects").html("");
                 $("table#tablo_ortalama1 tbody").html("");
                 $.each(data, (key, value) => {
+                    
+                    var name = localStorage.getItem('nameOfStudent');
+                    console.log(name,name.substring(0, name.indexOf(" ")));
 
-                    if (value.name == "X") {
+                    if (value.name == name.substring(0, name.indexOf(" ")) ) {
                         for (let i = 0; i < value.subjects.length; i++) {
                             let str = "";
 
@@ -47,7 +50,7 @@ $(() => {
 
 
                             // checking if a subject grade under 60 
-                            ((value.subjects[i].grade < 60) && (value.subjects[i].ECTS != "")) ? (str += "<td class='text-center align-middle bg-aquamarine failGrade'>" + value.subjects[i].grade + "</td>") : (str += "<td class='text-center align-middle'>" + value.subjects[i].grade + "</td>");
+                            ((value.subjects[i].grade < 60) && (value.subjects[i].ECTS != "")) ? (str += "<td class='text-center align-middle bg-aquamarine failGrade'>" + value.subjects[i].grade + "</td>") : (str += "<td class='text-center align-middle'>" + 100 + "</td>");
                             str += "</tr>"
                             $("tbody#transkriptSubjects").html($("tbody#transkriptSubjects").html() + str);
                         }

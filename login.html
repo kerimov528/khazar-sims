@@ -22,8 +22,12 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <!-- <script src="./js/menu.js"></script> -->
-        <script src="./js/login.js"></script>
+
+    <!-- sweetalert js  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Main jquery file  -->
+    <script src="./js/login.js"></script>
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/login.min.css" />
@@ -34,7 +38,7 @@
 <body class="position-relative">
     <div class="container__login">
         <div class="login__box d-flex flex-column align-items-center justify-content-center">
-            <form action="" class="form-control bg-transparent border-0">
+            <form action="menu.html" class="form-control bg-transparent border-0">
                 <div class="form__input d-flex align-items-center justify-content-start w-100">
                     <span class="icon__input d-flex align-items-center position-absolute" id="icon1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -43,7 +47,7 @@
                         </svg>
                     </span>
                     <input type="text" class="border-0 fw-bold" placeholder="İstifadəçi adı" id="username"
-                    name="username" />
+                        name="username" />
                 </div>
                 <div class="form__input mb-3 d-flex align-items-center justify-content-start w-100">
                     <span class="icon__input d-flex align-items-center position-absolute" id="icon2">
@@ -59,42 +63,14 @@
                     <span class="login__error">Yanlış istifadəçi adı və ya şifrə</span>
                 </div>
                 <div class="form__input__btn w-100 mt-3">
-                    <button class="text-center w-100 border-0 fw-bold">Daxil ol</button>
+                    <button class="text-center w-100 border-0 fw-bold" onclick="passValues()">
+                        Daxil ol
+                    </button>
                 </div>
                 <div class="form__password__forget w-100 text-center mt-4">
                     <a href="#" class="fw-lighter" id="forgetPass">Şifrəmi unutmuşam</a>
                 </div>
             </form>
-        </div>
-    </div>
-    <div class="shadow__box position-absolute w-100 h-100 top-0 start-0 opacity-50" style="background-color: #000">
-    </div>
-    <div class="box bg-white position-absolute text-dark text-center top-50 start-50 translate-middle rounded-3"
-        id="forgetBox">
-        <div class="box__content">
-            <label for="username" class="d-inline-block text-center fs-3 mb-3">User name</label>
-            <input type="text" id="username1" class="d-block text-center rounded form-control mb-4" required>
-            <label for="date" class="d-inline-block text-center fs-3 mb-3">Date of Birth</label>
-            <input type="date" id="date" class="d-block text-center rounded form-control mb-4" required>
-
-            <div class="btn-group mt-4">
-                <button class="btn btn-primary me-3 rounded py-2 px-3" id="mailBtn">Mail göndər</button>
-                <button class="btn btn-secondary rounded px-3" id="cancelBtn">Iptal et</button>
-            </div>
-        </div>
-        <div class="box__error px-4">
-            <div class="header">
-                <div
-                    class="icon__box rounded-circle border border-3 m-auto mb-4 d-flex align-items-center justify-content-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" class="bi bi-x-lg"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                    </svg>
-                </div>
-                <h2 id="errorMessage">İstifadəçi adı tələb olunur</h2>
-            </div>
-            <button class="btn btn-primary mt-3" id="okBtn">OK</button>
         </div>
     </div>
 </body>

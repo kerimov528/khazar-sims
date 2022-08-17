@@ -24,9 +24,13 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/login.js"></script>
 
-    <!-- main css -->
+    <!-- Sweetalert js  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="./js/menu.js"></script>
+
+    <!-- Main Css -->
     <link rel="stylesheet" href="./css/menu.min.css" />
 
     <title>Xəzər Universiteti</title>
@@ -34,9 +38,8 @@
 
 <body>
     <div class="wrapper d-flex position-relative">
-        <div class="shadow__box position-absolute w-100 h-100 top-0 start-0 opacity-25"></div>
         <div class="sidebar navbar-nav">
-            <a href="#" class="sidebar__brand text-center">
+            <a href="#" class="sidebar__brand text-center" role="button" id="menu">
                 <img src="./img/sidebar-amblem.png" alt="Khazar Logo" />
             </a>
             <hr class="divider my-0" />
@@ -56,7 +59,7 @@
                         <i class="fa-solid fa-arrow-down-1-9"></i>
                         Semestr Grades
                     </a>
-                    <a href="#" role="button" id="gradeComp">
+                    <a href="#" role="button" id="gradeComplation">
                         <i class="fa-solid fa-person-dots-from-line"></i>
                         Grade Completion Application
                     </a>
@@ -68,7 +71,7 @@
                         <i class="fa-solid fa-person-dots-from-line"></i>
                         Objection Application
                     </a>
-                    <a href="#" role="button" id="appMake">
+                    <a href="#" role="button" id="appMakeUpExam">
                         <i class="fa-solid fa-person-dots-from-line"></i>
                         Application for Make-up Exam
                     </a>
@@ -106,7 +109,6 @@
                         <a class="nav-link d-flex align-items-center" href="#" id="userDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="me-2 d-none d-lg-inline small" style="color: #3a3b45" id="userNameAtNav">
-                                <!-- Anar Kərimov ( Student ) -->
                             </span>
                             <i class="fas fa-user-circle fa-lg" style="color: #002f6c"> </i>
                             <img class="ms-2" src="./img/united-states.png" />
@@ -118,7 +120,7 @@
                                 Profile
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item py-0 ps-4" href="#" data-toggle="modal" id="logOut" name="logOut">
+                            <a class="dropdown-item py-0 ps-4" role="button" id="logOut" name="logOut">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw me-2"></i>
                                 Log out
                             </a>
@@ -126,28 +128,13 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Main Content  -->
             <div class="mainContentTop position-relative" id="mainContentTop">
+
+                <!-- Loading Animation  -->
                 <div class="logoAnimation w-100 h-100 position-absolute align-items-center justify-content-center">
                     <img src="./img/khazar__logo.png" alt="" style="width: 3rem; animation: circle 3s infinite" />
-                </div>
-                <div class="box bg-white position-absolute text-dark text-center top-50 start-50 translate-middle rounded-3"
-                    id="forgetBox">
-                    <div class="box__error px-4">
-                        <div class="header">
-                            <div
-                                class="icon__box rounded-circle border border-4 m-auto mb-4 d-flex align-items-center justify-content-center">
-                                <div>?</div>
-                            </div>
-                            <h2 id="errorMessage">From Automation System</h2>
-                            <p class="m-0">Are You Sure You Want To Quit?</p>
-                        </div>
-                        <button class="btn btn-primary mt-3 d-inline-block" id="yesBtn">
-                            YES
-                        </button>
-                        <button class="btn btn-danger mt-3 d-inline-block" id="noBtn">
-                            NO
-                        </button>
-                    </div>
                 </div>
 
                 <div class="container-fluid px-4">
@@ -206,6 +193,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Footer  -->
             <footer class="bg-white py-1 d-flex align-items-center justify-content-center">
                 <span>Copyright © Tüm Hakları Saklıdır 2022</span>
             </footer>
@@ -216,9 +205,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-
-    <script src="./js/menu.js"></script>
-    
 </body>
 
 </html>
