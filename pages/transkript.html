@@ -29,14 +29,14 @@ crossorigin="anonymous"
 <link rel="stylesheet" href="../css/menuPagesStyle.min.css" />
   
 <div class="container" style="width: 1150px">
-  <div class="card mb-4">
-    <div class="card-header">
+  <div class="card mb-4 d-flex flex-column position-relative bg-white">
+    <div class="card-header mb-0">
       <h6 class="m-0 fw-bold text-primary">
         <i class="fas fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;Transcript
       </h6>
     </div>
     <div class="card-body">
-      <div class="row" id="alt_bilgiler">
+      <div class="row">
         <div class="col-md-8">
           <div id="transkript" style="margin-top: -20px">
             <div class="table-responsive">
@@ -74,15 +74,15 @@ crossorigin="anonymous"
               >
                 <thead class="table-secondary">
                   <tr>
-                    <th class="p-1">General</th>
+                    <th>General</th>
                     <th
-                      class="p-1 text-end"
+                      class="text-end"
                       style="width: 30%; padding-right: 5px"
                     >
                       Credit
                     </th>
                     <th
-                      class="p-1 text-end"
+                      class="text-end"
                       style="width: 30%; padding-right: 5px"
                     >
                       ECTS
@@ -103,20 +103,13 @@ crossorigin="anonymous"
                 position: absolute;
                 right: 15px; top: 0;"
                 >
-                <i class="btnIcon fa fa-print d-block pt-2"></i>
+                <i class="fa fa-print d-block pt-2"></i>
                 <span>Print</span>
                 </a
               >
             </div>
           </div>
           <div id="kategoriler">
-            <style type="text/css">
-              #tablo_kategoriler1 td,
-              #tablo_kategoriler1 th {
-                padding: 0.09rem !important;
-              }
-            </style>
-
             <table
               class="table table-bordered table-sm text-black mt-2"
               id="tablo_kategoriler1"

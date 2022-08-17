@@ -10,13 +10,9 @@ li {
 }
 
 div.container {
+    padding: 0 1.5rem;
     div.card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
         word-wrap: break-word;
-        background-color: #fff;
         background-clip: border-box;
         border: 1px solid #e3e6f0;
         border-radius: .35rem;
@@ -25,7 +21,6 @@ div.container {
         .card-header {
             background-color: #99ABC4 !important;
             padding: .75rem 1.25rem;
-            margin-bottom: 0;
             border-bottom: 1px solid #e3e6f0;
 
             h6 {
@@ -39,8 +34,7 @@ div.container {
             padding: 1.25rem;
 
             div.float-start {
-                margin-top: .5rem;
-
+                
                 input {
                     background-color: #eaecf4;
                     opacity: 1;
@@ -55,6 +49,7 @@ div.container {
                 }
             }
 
+            //timetable
             div.float-end.print {
                 background-color: darkblue;
                 font-size: 1rem;
@@ -82,7 +77,7 @@ div.container {
                             font-size: 9pt ;
                             margin-bottom: 3px;
                             th,td {
-                            padding: .2rem !important;
+                            padding: .25rem !important;
                             }
                         }
                     }
@@ -90,18 +85,21 @@ div.container {
             }
 
             table#tablo_dersler {
-                margin-left: -10px;
                 font-size: 9pt ;
-                margin-bottom: 3px;
-                th,td {
-                padding: .2rem !important;
+                th {
+                    border-bottom-width: 2px;
+                    border-bottom: 2px solid #e3e6f0;
                 }
+                th,td {
+                padding: .1rem !important;
+                }
+
             }
 
             div.semestr {
                 margin-top: -3px;
                 label.radio-inline {
-                    margin-top: 3px; 
+                    margin-top: -1px; 
                     margin-left: 5px
                 }
             }
@@ -109,22 +107,21 @@ div.container {
             div.inquire {
                 padding-bottom: 5px;
                 margin-top: -5px;
-                margin-right: 10px;
                 background-color: none !important;
                 button {
                     position: relative;
                     bottom: 0;
-                    font-size: 1rem;
+                    font-size: 15px;
                     &:hover {
                         background-color: lightgray !important;
                     }
                     span {
+                        padding-top: 5px;
                         padding-left: 12px; 
                         margin-top: -3px;
-                        float: right;
                     }
                     i {
-                        padding-top: 2.8px;
+                        padding-top: 5.3px;
                     }
                 }
             }
@@ -165,7 +162,7 @@ div.container {
             }
             div#dersprogrami {
                 table {
-                    font-size: 8.5pt;
+                    font-size: 8pt;
                     tbody tr td:first-child {
                         line-height: 30px !important;
                     }
@@ -183,6 +180,9 @@ div.container {
 }
 
 
+.card-body {
+    padding: 1.25rem;
+}
 table th {
     background-color: #e5eaf0 !important;
 }
@@ -204,4 +204,8 @@ table th {
     td,th {
         padding: 0.1rem !important;
     }
+}
+#tablo_kategoriler1 td,
+#tablo_kategoriler1 th {
+    padding: 0.09rem !important;
 }

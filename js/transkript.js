@@ -34,7 +34,11 @@ $(() => {
                             );
 
                             str += "<td class='text-center align-middle'>" + value.subjects[i].lang + "</td>";
-                            str += "<td class='text-center align-middle'>" + Number(value.subjects[i].credit).toFixed(1) + "</td>";
+
+                            // checking if credit is exists
+                            (value.subjects[i].credit == "") ? 
+                            (str += "<td class='text-center align-middle'>" + value.subjects[i].credit + "</td>") :
+                            (str += "<td class='text-center align-middle'>" + Number(value.subjects[i].credit).toFixed(1) + "</td>");
 
                             //checking if ECTS is paid or not
                             (value.subjects[i].ECTS == "") ?
