@@ -14,13 +14,22 @@
 <!-- main css -->
 <link rel="stylesheet" href="../css/menuPagesStyle.min.css" />
 
+<script>
+    // $(()=>{
+    //     $("label#karakter").html("200");
+    // })
+</script>
 
 <div class="container" style="width:1150px">
     <div class="card mb-4">
         <div class="card-header">
             <h6 class="m-0 fw-bold text-primary">
                 <i class="fas fa-diagnoses"></i>&nbsp;&nbsp;&nbsp;&nbsp;Deans Application
-                <a href="#"><i class="fas fa-question float-end"></i></a>
+                <button class="btn border-0 bg-transparent d-inline-block  float-end" type="button"
+                    data-bs-toggle="modal" data-bs-target="#deansAppModal">
+                    <i class="fas fa-question float-end">
+                    </i>
+                </button>
             </h6>
         </div>
         <div class="card-body">
@@ -37,9 +46,9 @@
                     <label class="col-form-label text-end form-control-sm float-start fw-bold">Summer</label>
                 </div>
 
-                <div class="float-end bg-white">
+                <div class="float-end">
                     <label class="col-form-label float-end form-control-sm text-dark fw-bold" id="karakter"
-                        style="margin: -3px 0">250</label>
+                    style="margin-bottom: -5px">250</label>
                 </div>
             </div>
 
@@ -67,8 +76,37 @@
                     </thead>
                     <tbody>
                     </tbody>
-                </table>
+                
+    <div class="modal fade" id="deansAppModal" tabindex="-1" aria-labelledby="deansAppModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="deansAppModalLabel">
+                        Module Documentation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="container-fluid px-4">
+                        <div class="p-3">
+                                <p><strong>Application to the Dean s Office</strong></p>
+                                <p>You can send your requests after ers registration or any other request to the Dean s
+                                    Office via this menu. The dean s officer will follow them and give you the
+                                    appropriate answers.</p>
+                                <p>Changes can be made on the unanswered application, and your application date will be
+                                    renewed with the change. If the application has been answered, you cannot make
+                                    changes on the application, you can follow the response and the date on the screen.
+                                </p>
+                                <p>
+                                    <img class="mx-auto d-block" src="../img/DekanlikBasvurusu1.png"
+                                        alt="Ogrenci Ders Programi" width="692" height="280" />
+                                </p>
+                                <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+  </div>
 </div>

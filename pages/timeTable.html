@@ -19,7 +19,10 @@
         <div class="card-header">
             <h6 class="m-0 fw-bold text-primary">
                 <i class="fas fa-fw fa-table"></i>&nbsp;&nbsp;&nbsp;&nbsp;Syllabus
-                <a href="#"><i class="fas fa-question float-end"></i></a>
+                <button class="btn border-0 bg-transparent d-inline-block  float-end" type="button" data-bs-toggle="modal" data-bs-target="#timeTableModal">
+                    <i class="fas fa-question float-end">
+                    </i>
+                </button>
             </h6>
         </div>
         <div class="card-body">
@@ -37,7 +40,8 @@
 
                 <div class="float-end print">
                     <button class="btn" style="width: 150px">
-                        <i class="btnIcon fa fa-print text-white float-end"></i>
+                            <i class="fa fa-print text-white float-end">
+                            </i>
                         <span class="text-white">Print</span>
                     </button>
                 </div>
@@ -143,4 +147,37 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="timeTableModal" tabindex="-1" aria-labelledby="timeTableModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="timeTableModalLabel">
+                Module Documentation
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <div class="container-fluid px-4">
+                <div class="p-3">
+                  <div>
+                    <p><strong>Syllabus</strong></p>
+                    <p>
+                      You can see your course schedule for the active semester
+                      here.
+                    </p>
+                    <p>You can also print out the displayed information.</p>
+                    <p>
+                      <img class="mx-auto d-block" src="../img/OgrenciDersProgrami1.png" alt="Ogrenci Ders Programi" width="692"
+                        height="550" />
+                    </p>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </div>

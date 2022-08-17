@@ -2,458 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/khazar__logo.png" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/khazar__logo.png" type="image/x-icon" />
 
-    <!-- Google Icons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Fontawasome Icons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
-        integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fontawasome Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+    integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/menu.js"></script>
-    <!-- <script src="./js/login.js"></script> -->
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/menu.js"></script>
+  <!-- <script src="./js/login.js"></script> -->
 
-    <title>Xəzər Universiteti</title>
+  <title>Xəzər Universiteti</title>
+  <!-- <style>
+    div.modal {
+      display: block;
+      padding-left: 0px;
+    }
+
+    .modal-open .modal {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .modal {
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 1050;
+      display: none;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      outline: 0;
+    }
+
+    .fade {
+      transition: opacity .15s linear;
+    }
+
+    .modal-backdrop.show {
+      opacity: .5;
+    }
+
+    /* .modal-backdrop.fade {
+    opacity: 0;
+} */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1040;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
+  </style> -->
 </head>
 
 <body>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#timeTableModal"
+    data-bs-whatever="@mdo">Open modal for @mdo</button>
 
-    <tbody id="transkriptSubjects">
-        <tr>
-          <td class="text-center align-middle">MATH</td>
-          <td class="text-center align-middle">231</td>
-          <td class="align-middle">Applied Linear Algebra</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">60</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">MATH</td>
-          <td class="text-center align-middle">340</td>
-          <td class="align-middle">Applied Statistical Analysis</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">79</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">AZC</td>
-          <td class="text-center align-middle">201p</td>
-          <td class="align-middle">Azerbaijani Culture</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">2.0</td>
-          <td class="text-center align-middle">4</td>
-          <td class="text-center align-middle">100</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">AZLL</td>
-          <td class="text-center align-middle">101</td>
-          <td class="align-middle">Azerbaijani Language</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">87</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">MATH</td>
-          <td class="text-center align-middle">101</td>
-          <td class="align-middle">Calculus-1</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">76</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">MATH</td>
-          <td class="text-center align-middle">102</td>
-          <td class="align-middle">Calculus-2</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">93</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">410</td>
-          <td class="align-middle">
-            Cisco Certificate Networks administrator-1
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">82</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">115</td>
-          <td class="align-middle">
-            Computer Application in Engineering
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">74</td>
-        </tr>
-        <tr>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            CMS
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            115
-          </td>
-          <td
-            class="align-middle"
-            style="background-color: aquamarine"
-          >
-            Computer Application in Engineering
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            AZ
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            3.0
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            6
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            41
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">309</td>
-          <td class="align-middle">Computer Networks</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">91</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">241</td>
-          <td class="align-middle">
-            Computer Organization and System Programming
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">73</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">215</td>
-          <td class="align-middle">Data Structure</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">88</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">316</td>
-          <td class="align-middle">Database Management Systems</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">4.0</td>
-          <td class="text-center align-middle">8</td>
-          <td class="text-center align-middle">95</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">ENGL</td>
-          <td class="text-center align-middle">216c</td>
-          <td class="align-middle">English for Special Purposes</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">91</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">ENGL</td>
-          <td class="text-center align-middle">101</td>
-          <td class="align-middle">English Foundation-1</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">4.0</td>
-          <td class="text-center align-middle">8</td>
-          <td class="text-center align-middle">83</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">ENGL</td>
-          <td class="text-center align-middle">102</td>
-          <td class="align-middle">English Foundation-2</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">4.0</td>
-          <td class="text-center align-middle">8</td>
-          <td class="text-center align-middle">99</td>
-        </tr>
-        <tr>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            CMS
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            140
-          </td>
-          <td
-            class="align-middle"
-            style="background-color: aquamarine"
-          >
-            Fundamentals of Computer Programming
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            AZ
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            3.0
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            6
-          </td>
-          <td
-            class="text-center align-middle"
-            style="background-color: aquamarine"
-          >
-            66
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">140</td>
-          <td class="align-middle">
-            Fundamentals of Computer Programming
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">94</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">GERM</td>
-          <td class="text-center align-middle">201</td>
-          <td class="align-middle">German Language-1</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">94</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">AZH</td>
-          <td class="text-center align-middle">150</td>
-          <td class="align-middle">History of Azerbaijan</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">91</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">MATH</td>
-          <td class="text-center align-middle">330</td>
-          <td class="align-middle">
-            Introduction to Discrete Mathematics
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">91</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">ECON</td>
-          <td class="text-center align-middle">101</td>
-          <td class="align-middle">Introduction to Economics</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">98</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">PHIL</td>
-          <td class="text-center align-middle">101</td>
-          <td class="align-middle">Introduction to philosophy</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">86</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">370</td>
-          <td class="align-middle">
-            Introduction to Theory of Computation
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">93</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">LAW</td>
-          <td class="text-center align-middle">102</td>
-          <td class="align-middle">Law Enforcement Systems</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">93</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">205</td>
-          <td class="align-middle">Object Oriented Programming</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">100</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">362</td>
-          <td class="align-middle">Operating Systems</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">91</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">360</td>
-          <td class="align-middle">
-            Operations Research and Optimization
-          </td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">71</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">PHSC</td>
-          <td class="text-center align-middle">111</td>
-          <td class="align-middle">Physics-1</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">94</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">PHSC</td>
-          <td class="text-center align-middle">112</td>
-          <td class="align-middle">Physics-2</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">91</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">EENG</td>
-          <td class="text-center align-middle">302</td>
-          <td class="align-middle">Signals and Systems</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">87</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">220</td>
-          <td class="align-middle">Web Programming-1</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">95</td>
-        </tr>
-        <tr>
-          <td class="text-center align-middle">CMS</td>
-          <td class="text-center align-middle">250</td>
-          <td class="align-middle">Web Programming-2</td>
-          <td class="text-center align-middle">AZ</td>
-          <td class="text-center align-middle">3.0</td>
-          <td class="text-center align-middle">6</td>
-          <td class="text-center align-middle">92</td>
-        </tr>
-      </tbody>
+  <div class="modal fade" id="timeTableModal" tabindex="-1" aria-labelledby="timeTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="timeTableModalLabel">
+            Module Documentation
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="p-3">
+              <div>
+                <p><strong>Syllabus</strong></p>
+                <p>
+                  You can see your course schedule for the active semester
+                  here.
+                </p>
+                <p>You can also print out the displayed information.</p>
+                <p>
+                  <img style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                      " src="http:\\sims.khazar.org\assets\img_dokuman\OgrenciDersProgrami1.png" alt="" width="692"
+                    height="550" />
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-
-        <script>
-
-            $(()=> {
-                $(window).on("load", ()=> {
-        $.getJSON("../json/transkript.json", 
-        (data) => {
-
-            var str = "";
-            $.each(data,(key,value)=> {
-                // console.log(value.name, value.subjects[0].courseName);
-
-                if(value.name == "Anar"){
-                    for (let i = 0; i < value.subjects.length; i++) {
-                        console.log(value.name, value.subjects[i].courseName,"str =>", str);
-                        str += `<tr>`;
-                        str += `<td>`;
-                        str += value.subjects[i].courseName; 
-                        str += `</td>`;
-                        str += `<td>`;
-                        str += value.subjects[i].grade; 
-                        str += `</td>`;
-                        str += `</tr>`;
-                    }
-                }
-
-                console.log($("div#result").html());
-                $("div#result table tbody").html(str);
-            })
-        }
-    );
-    });
-            })
-
-        </script>
+  <!-- Bootstrap js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

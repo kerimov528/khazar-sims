@@ -15,11 +15,15 @@
 <link rel="stylesheet" href="../css/menuPagesStyle.min.css" />
 
 <div class="container" style="width:920px">
+    <!-- Object App Card  -->
     <div class="card mb-4">
         <div class="card-header">
             <h6 class="m-0 fw-bold text-primary">
                 <i class="fas fa-diagnoses"></i>&nbsp;&nbsp;&nbsp;&nbsp;Objection Application
-                <a href="#"><i class="fas fa-question float-end"></i></a>
+                <button class="btn border-0 bg-transparent d-inline-block  float-end" type="button" data-bs-toggle="modal" data-bs-target="#objectAppModal">
+                    <i class="fas fa-question float-end">
+                    </i>
+                </button>
             </h6>
         </div>
         <div class="card-body">
@@ -76,4 +80,31 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Object App Modal  -->
+    <div class="modal fade" id="objectAppModal" tabindex="-1" aria-labelledby="objectAppModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="objectAppModalLabel">
+                Module Documentation
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="container-fluid px-4">
+                    <div class="p-3">
+                            <div><p><strong>Objection Application</strong></p>
+                <p>Students can object to the grades of the courses they expect higher grades after the lecturer seals the grades during the semester.</p>
+                <p>Students can apply within 7 days after the stamp of the Course Shares.</p>
+                <p>Previously made applications and finalized applications can also be followed through this screen.</p>
+                <p><img class="d-block mx-auto" src="../img/ItirazBasvurusu1.png" alt="" width="692" height="380"></p>
+                <p>&nbsp;</p></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
