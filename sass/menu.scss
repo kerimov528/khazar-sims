@@ -14,11 +14,39 @@ a {
 
 div.wrapper {
 
+    div.logoAnimationBox {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: none;
+        position: absolute;
+        background: rgba($color: #000, $alpha: 0.2);
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        img {
+        width: 3rem; 
+        animation: circle 2s ease infinite;
+        }
+    }  
+    @keyframes circle {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
     // sidebar
     .sidebar {
+        display: flex;
         min-width: 6.2rem;
         min-height: 100vh;
         background-color: $menuSidebarColor;
+        &.clickBtn{
+            min-width: 10.2rem;
+        }
 
         .sidebar__brand {
             width: 100%;
@@ -63,7 +91,8 @@ div.wrapper {
 
             div#sidebarMenu {
                 display: none;
-                min-width: 10rem;
+                min-width: 15rem;
+                position: relative;
                 background-color: #CCD5E1;
                 border-radius: .35rem;
                 color: #fff;
@@ -112,16 +141,13 @@ div.wrapper {
     .main__content {
         width: 100%;
         min-height: 100vh;
-        max-width: calc(100% - 6.2rem);
+        min-width: calc(100% - 6.2rem);
         background-color: #f8f9fc !important;
         background: url("../../img/main_bg.png") no-repeat center center;
 
         &.smallContent {
-            max-width: calc(100% - 17.813rem);
-        }
-        .logoAnimation {
-            display: none;
-        }
+            min-width: calc(100% - 17.813rem);
+        } 
         nav.navbar {
             height: 2.5rem;
             @include shadow;
@@ -132,60 +158,15 @@ div.wrapper {
                     font-size: .85rem;
                 }
             }
+            span#userNameAtNav {
+                font-size: 80%;
+                font-weight: 500;
+                color: #3a3b45;
+            }
         }
 
         .mainContentTop {
             min-height: calc(100vh - 5rem);
-            @keyframes circle {
-                0% {
-                    transform: rotate(0deg);
-                }
-                50% {
-                    transform: rotate(360deg);
-                }
-                100% {
-                    transform: rotate(calc(360deg * 2));
-                }
-            }
-
-
-            .box {
-                display: none;
-                @include box;
-        
-                .box__content {
-                  @include boxContent;
-                }
-                .box__error {
-                    .header {
-                        padding: 1.2rem 0 .5rem;
-                        .icon__box {
-                            width: 5.5rem;
-                            height: 5.5rem;
-                            padding: 1rem;
-                            border-color:  #c9dae1;  
-                            color: #87adbd;
-                            font-size: 3.75rem;
-                        }
-                        h2 {
-                            @include titleH2;
-                        }
-                        
-                p {
-                    color: #545454;
-                    font-size: 1.125em;
-                    font-weight: 400;
-                }
-                    }
-                    button {
-                        font-size: 1.2rem;
-                        padding: .625rem 1.1rem;
-                    }
-        
-                }
-            }
-
-
             div.row {
                 .card {
                     border-left: .25rem solid #4e73df;
@@ -224,5 +205,21 @@ div.wrapper {
             }
         }
 
+    }
+}
+@media screen and (min-width: 768px){
+    .sidebar  {
+        display: flex !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .sidebar  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .mainContentTop {
+        overflow-x: hidden;
     }
 }

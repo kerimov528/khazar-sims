@@ -7,12 +7,10 @@ $(() => {
 
     // Page Load 
     function loading() {
-        window.onload = function () {
-            $(".logoAnimation").css("display", "flex");
+            $("div.logoAnimationBox").css("display", "flex");
             setTimeout(() => {
-                $(".logoAnimation").hide()
+                $("div.logoAnimationBox").hide();
             }, 3000);
-        }
     }
 
     //Getting Your Name to Navbar section
@@ -32,27 +30,38 @@ $(() => {
 
 
     // sidebar menu link
-
     function loadMenuLinks() {
-    let menuLinks = [
-        'timeTable',
-        'gradeComplation',
-        'gradeUpgrade',
-        'semestrGrades',
-        'objectApp',
-        'appMakeUpExam',
-        'deansApp',
-        'transkript',
-        'menu'
-    ]
+        let menuLinks = [
+            'timeTable',
+            'gradeComplation',
+            'gradeUpgrade',
+            'semestrGrades',
+            'objectApp',
+            'appMakeUpExam',
+            'deansApp',
+            'transkript',
+            'menu',
+            'profile'
+        ]
 
-    menuLinks.forEach(menuLink => {
-        $("#" + menuLink).click(()=> {
-            (menuLink == "menu") ? ( window.location = "menu.html" ) : (
-            $(".mainContentTop").load("../pages/" + menuLink + ".html"))
-        })
-    });
-}
+        menuLinks.forEach(menuLink => {
+            $("#" + menuLink).click(() => {
+                (menuLink == "menu") ? (window.location = "menu.html") : 
+                (menuLink == "transkript") ? 
+                (
+                    loading(),
+                    setTimeout(() => {
+                        (
+                            $(".mainContentTop").load("../pages/" + menuLink + ".html")
+                        )
+                    }, 2000)
+                ) : (
+                    $(".mainContentTop").load("../pages/" + menuLink + ".html")
+                )
+                 
+            })
+        });
+    }
 
     //after click another place when open menu link
     $("#sidebarMenu > a , .mainContentTop").click(function () {
@@ -62,13 +71,15 @@ $(() => {
 
     // sidebar button at bottom
     $("#sidebarBtnToggle").click(function () {
-        $("#sidebarMenu").removeClass("absolute");
-        $("div.main__content").toggleClass("smallContent");
-        $("#sidebarMenu").toggle();
+        $(".sidebar").toggleClass("clickBtn");
     })
 
-    // Log Out 
+$("#sidebarToggleTop").click(()=> {
+    console.log("tiklandi");
+    $(".sidebar").toggle();
+});
 
+    // Log Out 
     $("a#logOut").click(function () {
         Swal.fire({
             title: 'From Automation System',
@@ -85,5 +96,18 @@ $(() => {
             }
         })
     })
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    $(window).scroll(()=> {
+        scrollFunction();
+    });
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            $(".scroll-to-top").fadeIn();
+        } else {
+            $(".scroll-to-top").fadeOut();
+        }
+    }
 
 })

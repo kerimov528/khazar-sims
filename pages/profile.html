@@ -1,0 +1,211 @@
+<!-- Google Icons  -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<!-- Bootstrap CSS -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+  crossorigin="anonymous"
+/>
+
+<!-- jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+
+<!-- <script src="./js/menu.js"></script> -->
+<link rel="stylesheet" href="../css/menuPagesStyle.min.css">
+
+<div class="container col-sm-6" id="profile">
+  <div class="card mb-2">
+    <div class="card-header py-3">
+      <h6 class="m-0 fw-bold text-primary">
+        <i class="fas fa-user fa-sm fa-fw mr-2"></i
+        >&nbsp;&nbsp;&nbsp;&nbsp;Profile
+      </h6>
+    </div>
+    <div class="card-body">
+      <div
+        class="panel panel-primary border-light"
+      >
+        <div class="panel-body">
+          <div class="form-group row pb-2" style="padding-top: 5px">
+            <label
+              class="col-sm-4 col-form-label form-control-sm"
+              style="margin-left: 10px"
+              >System Language</label
+            >
+
+            <div class="col-sm-8" style="margin-left: -15px">
+              <label class="radio-inline">
+                <input
+                  name="sistemdili"
+                  style="margin-left: 20px"
+                  type="radio"
+                />
+                <img src="../img/azerbaijan.png" />
+              </label>
+              <label class="radio-inline">
+                <input
+                  value="2"
+                  checked="checked"
+                  name="sistemdili"
+                  style="margin-left: 20px"
+                  type="radio"
+                />
+                <img src="../img/united-states.png" />
+              </label>
+              <label class="radio-inline">
+                <input
+                  value="3"
+                  name="sistemdili"
+                  style="margin-left: 20px"
+                  type="radio"
+                />
+                <img src="../img/turkey.png" />
+              </label>
+              <label class="radio-inline">
+                <input
+                  value="4"
+                  name="sistemdili"
+                  style="margin-left: 20px"
+                  type="radio"
+                />
+                <img src="../img/russia.png" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn btn-primary "
+          style="
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 398px;"
+        >
+          <i class="fa fa-save float-end"></i>
+          <span>Change System Language</span>
+        </button>
+      </div>
+
+      <div
+        class="panel panel-primary border-light"
+        style="margin-top: 10px"
+      >
+        <div class="form-group row  my-1" style="margin-top: 5px">
+          <label
+            class="col-sm-4 col-form-label text-left form-control-sm"
+            style="margin-left: 10px"
+            >Old Password</label
+          >
+          <div class="col-sm-8" style="margin-left: -15px">
+            <input
+              class="form-control form-control-sm"
+              name="eskisifre"
+              placeholder="Old Password"
+              required="required"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="form-group row  my-1">
+          <label
+            class="col-sm-4 col-form-label text-left form-control-sm"
+            style="margin-left: 10px"
+            >New Password</label
+          >
+          <div class="col-sm-8" style="margin-left: -15px">
+            <input
+              class="form-control form-control-sm"
+              maxlength="20"
+              name="yenisifre"
+              placeholder="New Password"
+              required="required"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="form-group row  my-1">
+          <label
+            class="col-sm-4 col-form-label text-left form-control-sm"
+            style="margin-left: 10px"
+            >New Password (Again)</label
+          >
+          <div class="col-sm-8" style="margin-left: -15px">
+            <input
+              class="form-control form-control-sm"
+              maxlength="20"
+              name="yenisifretekrar"
+              placeholder="New Password (Again)"
+              required="required"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+
+        <button
+          class="btn btn-primary"
+          style="
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 398px;
+          "
+        >
+          <i class="btnIcon fa fa-save float-end"></i>
+          <span>Change Password</span>
+        </button>
+      </div>
+
+      <div
+        class="panel panel-primary border-light"
+        style="margin-top: 10px"
+      >
+        <div class="form-group row" style="margin-top: 5px">
+          <label
+            class="col-sm-4 col-form-label text-left form-control-sm"
+            style="margin-left: 10px"
+            >E-Mail</label
+          >
+          <div class="col-sm-8" style="margin-left: -15px">
+            <input
+              class="form-control form-control-sm"
+              name="email"
+              placeholder="E-Mail"
+              required="required"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+
+        <button
+          class="btn btn-primary"
+          style="
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 398px;
+          "
+        >
+          <i class="fa fa-save float-end"></i>
+          <span>Update Email</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

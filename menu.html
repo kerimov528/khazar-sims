@@ -36,8 +36,12 @@
     <title>Xəzər Universiteti</title>
 </head>
 
-<body>
+<body id="page-top">
     <div class="wrapper d-flex position-relative">
+        <!-- Loading Animation  -->
+        <div class="logoAnimationBox align-items-center justify-content-center">
+                <img src="./img/khazar__logo.png" alt=""/>
+        </div>
         <div class="sidebar navbar-nav">
             <a href="#" class="sidebar__brand text-center" role="button" id="menu">
                 <img src="./img/sidebar-amblem.png" alt="Khazar Logo" />
@@ -108,14 +112,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link d-flex align-items-center" href="#" id="userDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="me-2 d-none d-lg-inline small" style="color: #3a3b45" id="userNameAtNav">
+                            <span class="me-2 mb-1 d-none d-lg-inline" id="userNameAtNav">
                             </span>
                             <i class="fas fa-user-circle fa-lg" style="color: #002f6c"> </i>
                             <img class="ms-2" src="./img/united-states.png" />
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
-                            <a class="dropdown-item py-0 ps-4" href="#">
+                            <a class="dropdown-item py-0 ps-4" role="button" id="profile">
                                 <i class="fas fa-user fa-sm fa-fw me-2"></i>
                                 Profile
                             </a>
@@ -131,11 +135,6 @@
 
             <!-- Main Content  -->
             <div class="mainContentTop position-relative" id="mainContentTop">
-
-                <!-- Loading Animation  -->
-                <div class="logoAnimation w-100 h-100 position-absolute align-items-center justify-content-center">
-                    <img src="./img/khazar__logo.png" alt="" style="width: 3rem; animation: circle 3s infinite" />
-                </div>
 
                 <div class="container-fluid px-4">
                     <div class="row">
@@ -192,6 +191,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- Footer  -->
