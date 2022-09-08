@@ -91,7 +91,7 @@ $("#sidebarToggleTop").click(()=> {
             cancelButtonText: 'No'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location = '../login.html';
+                window.location = './';
             }
         })
     })
