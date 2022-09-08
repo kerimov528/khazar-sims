@@ -32,9 +32,8 @@ $(() => {
                 $.each(data, function (key, value) {
                     num++;
                     if ($("#username").val() == value.username && $("#loginPassword").val() == value.password) {
-                        // console.log(value.fullName)
                         passValues(value.fullName);
-                        window.location.href = "menu.html";
+                        window.location.href = "./pages/menu.html";
                     } else {
                         count++;
                     }
