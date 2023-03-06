@@ -1,0 +1,58 @@
+[
+    {
+        "lesson-code": "MED 315",
+        "course-name": "Life Science",
+        "group": "B",
+        "credit": "3.0",
+        "5": "",
+        "4": "",
+        "3": "",
+        "2": "",
+        "1": "",
+        "Midterm": "",
+        "Final": "",
+        "Average": "-"
+    },
+    {
+        "lesson-code": "CMS 363",
+        "course-name": "Digital Logic",
+        "group": "A",
+        "credit": "4.0",
+        "5": "",
+        "4": "",
+        "3": "",
+        "2": "",
+        "1": "",
+        "Midterm": "",
+        "Final": "",
+        "Average": "-"
+    },
+    {
+        "lesson-code": "CMS 401",
+        "course-name": "Introduction to Robotics",
+        "group": "A",
+        "credit": "4.0",
+        "5": "",
+        "4": "",
+        "3": "",
+        "2": "",
+        "1": "",
+        "Midterm": "",
+        "Final": "",
+        "Average": "-"
+    },
+    {
+        "lesson-code": "CMS 535",
+        "course-name": "Multimedia Systems",
+        "group": "A",
+        "credit": "3.0",
+        "5": "",
+        "4": "",
+        "3": "",
+        "2": "",
+        "1": "",
+        "Midterm": "",
+        "Final": "",
+        "Average": "-"
+    }
+]

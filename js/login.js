@@ -8,9 +8,9 @@ $(() => {
         },
         "focusout": function () {
             $("#icon1").removeClass("iconAtFocus");
-
         }
     })
+
     $("input#loginPassword").on({
         "focusin": function () {
             $("#icon2").addClass("iconAtFocus");
@@ -49,7 +49,7 @@ $(() => {
     })
 
 
-    // pass fullname to localStorage 
+    // pass student's name afer validation to Storage 
 
     function passValues(name) {
         localStorage.setItem("nameOfStudent", name);

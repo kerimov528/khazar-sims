@@ -1,0 +1,503 @@
+﻿.btn-sm {
+    line-height: 1;
+}
+
+.btn-warning:hover {
+    color: black;
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+.dataTables_wrapper .dataTables_length {
+    float: right;
+    display: none;   
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+}
+
+    .dataTables_wrapper .dataTables_filter input {
+        margin-left: 0.5em;
+    }
+
+.dataTables_length {
+    margin-left: 20px;
+    padding-top: 5px;
+ 
+}
+
+.form-control1 {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: .35rem;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.form-control-sm1 {
+    height: calc(1.5em + .5rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.d-class {
+    background-color: yellow;
+}
+
+.f-class {
+    background-color: pink;
+}
+.anarenk_arkaplan {
+    background-color: #002F6C !important;    /*#6b345f  ! !important;*/
+}
+.anarenk_arkaplan_acik {
+    background-color: #CCD5E1 !important;  /* #002f6c #002a61 #002556 #00204b #001c40 #001736 #00122b #000e20 #000915 #00040a #000000   ANARENKTEN YUKARIYA gittikçe koyulaşıyor*/
+}
+.anarenk_arkaplan_acik_orta {
+    background-color: #99ABC4 !important;  /*#002f6c #19437a #325889 #4c6d98 #6682a6 #7f97b5 #99abc4 #b2c0d2 #ccd5e1 #e5eaf0 #ffffff  ANARENKTEN AŞAĞIYA GİTTİKÇE AÇILIYOR */
+}
+.anarenk_yazi {
+    color: #002F6C !important;    /*#6b345f  ! !important;*/
+}
+
+ /*devexpress görümü ayarları*/
+div[title="Print Page"] {
+        display: none;
+    }
+.dxrd-tab-panel-right {
+ display: none;      width:0;
+}
+ /*devexpress görümü sonu*/
+
+.form-control-search-input {
+    display:   block;
+    width: 100%;
+    height: 1.5em;
+    padding: 0px;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1;
+    color: #6e707e;
+    background-color:#fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    /*border-radius: .35rem;*/
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+}
+.table-selected-row {
+    background-color: #4c6d98 !important;
+    color:white;
+}
+.table-selected-row2 {
+    background-color: #4c6d98 !important;
+    color:white;
+}
+.btn.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tabs {
+    width: 100%;
+    margin: 0 auto;   
+    /*padding: 0 20px;*/
+}
+#tab-button {
+    display: inline-block;
+    table-layout: auto;
+    /*width: 100%;*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    #tab-button li {
+        display: table-cell;
+        width: 20%;
+    }
+
+        #tab-button li a {
+            display: block;
+            padding: .4em;
+            background: white; 
+            border: 1px solid #ddd;
+            text-align: center;
+            color: #000;
+            text-decoration: none;          
+        }
+
+        #tab-button li:not(:first-child) a {
+            border-left: none;
+        }
+
+        #tab-button li a:hover,
+        #tab-button .is-active a {
+            border-bottom-color: transparent;
+            background: lightgray;
+            color: white;            
+        }
+
+.tab-contents {
+    /*padding: .5em 2em 1em;*/
+    padding-right: 5px;
+    border: 1px solid #ddd;
+}
+
+.tab-button-outer {
+    display: none;
+}
+
+.tab-contents {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .tab-button-outer {
+        position: relative;
+        z-index: 0;
+        display: block;  
+    }
+
+    .tab-select-outer {
+        display: none;
+    }
+
+    .tab-contents {
+        position: relative;
+        top: -8px;
+        margin-top: 0;
+    }
+}
+.input-group-text {
+    padding: .275rem .75rem;
+}
+
+/* Animation effects for Magnific */
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+    /* overlay animate in */
+    .mfp-fade.mfp-bg.mfp-ready {
+        opacity: 0.8;
+    }
+    /* overlay animate out */
+    .mfp-fade.mfp-bg.mfp-removing {
+        opacity: 0;
+    }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+.tab-contents .form-group {
+    margin-left: -10px;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 4px 6px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #9089b1 !important;
+    line-height: 28px;
+    font-size: .875rem !important;     
+}
+ .well {
+        /* drop-shadow is better than box-shadow as it add a shadow to tooltip arrows arrow as well,
+            however drop-shadow dramatically affects the performance of transition animation on Android. */
+        /* filter: drop-shadow(0 0 10px rgba(0,0,0,0.3)); */
+        min-height: 20px;
+        padding: 40px;
+        margin-bottom: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+        display: none;
+        margin: 1em;
+        min-width: 20%;
+        max-width: 80%;
+
+    }
+
+        .well .popup_close {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            border-radius: 2px;
+            background: none;
+            border: 0;
+            font-size: 25px;
+            padding: 0 10px;
+        }
+
+    pre.prettyprint {
+        padding: 9px 14px;
+    }
+
+    #fadeandscale {
+        /*transform: scale(0.8);*/
+          -webkit-transform: scale(0.8);
+           -moz-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+                transform: scale(0.8);
+
+    }
+
+    .popup_visible #fadeandscale {
+        /*transform: scale(1);*/
+               -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+    }
+
+.tableFixHead          { overflow-y: auto; height: 332px; overflow-x: hidden; }
+.tableFixHead2          { overflow-y: auto; height: 435px; overflow-x: hidden; }
+.tableFixHead3          { overflow-y: auto; height: 600px; overflow-x: hidden; }
+.tableFixHead4          { overflow-y: auto; height: 350px; overflow-x: hidden; }
+.tableFixHead_ozel          { overflow-y: auto; height: 180px; overflow-x: hidden;  }
+.tableFixHead_ozel2          { overflow-y: auto; height: 250px; overflow-x: hidden;  }
+
+.tableFixHead thead th { position:sticky; top: 0; }
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px !important; }
+th {
+    background-color: #e5eaf0;} /*#e4d9e2 ; }*/
+
+
+
+.btn-kaydet { width:80px; position: absolute; right: 15px; bottom: 0; background-color:  blue; color:white; }
+.btn-kaydet2 { width:80px; right: 15px; bottom: 0; background-color: blue; color:white }
+.btn-kaydet3 { width:80px; height:90px; right: 15px; bottom: 0; background-color: blue; color:white }
+.btn-kaydet:hover { background-color: lightblue; color:white }
+.btn-kaydet2:hover { background-color: lightblue; color:white }
+.btn-kaydet3:hover { background-color: lightblue; color:white }
+.btn-kaydet:disabled  { background-color: blue;  opacity:0.3; color:white }
+.btn-kaydet > span {
+    font-size: 7.5pt;
+    display: inline-block;
+    padding-top: 5px;
+}
+.btn-kaydet2 > span { font-size: 7.5pt; display: inline-block; }
+.btn-kaydet3 > span { font-size: 7.5pt; display: inline-block; }
+.btn-kaydet > i { padding-top: 5px; }
+
+.btn-kaydet_disabled { width:80px;  right: 15px; bottom: 0; background-color: blue; color:white }
+.btn-kaydet_disabled:hover { background-color:  lightblue; color: white; }
+.btn-kaydet_disabled:disabled { background-color: blue;  color: white;   opacity:0.3; }
+    .btn-kaydet_disabled > span {
+        font-size: 7.5pt;
+        display: inline-block;
+    }
+.btn-kaydet_disabled > i { padding-top: 5px; }
+
+.btn-temizle { width:80px; position: absolute; right: 15px; bottom: 70px; background-color: lightgray; }
+.btn-temizle2 { width:81px; right: 15px; bottom: 70px; background-color: lightgray; }
+.btn-temizle3 { width:80px;  height:85px; background-color: lightgray; }
+.btn-temizle:hover { background-color: white; }
+.btn-temizle > span { display: block; padding-top: 5px; font-size: 10pt;  }
+.btn-temizle2 > span { display: block; padding-top: 5px;  font-size: 10pt; }
+.btn-temizle3 > span { display: block; padding-top: 5px;  font-size: 10pt; }
+.btn-temizle > i { padding-top: 5px; }
+.btn-temizle3 > i { padding-top: 15px; }
+
+.btn-sil { width:80px; position: absolute; right: 15px; bottom: 70px; background-color: blue; }
+.btn-sil:hover { background-color: yellow; }
+.btn-sil > span { display: block; padding-top: 5px; }
+.btn-sil > i { padding-top: 5px; }
+
+.btn-sorgula { width:30px; color: white; height:30px; position: relative; background-color: black; }
+.btn-sorgula:hover { background-color: lightgray; }
+.btn-sorgula > span { display: block;}
+.btn-sorgula > i { vertical-align: middle; margin-bottom : 15px;  margin-left: -5px;  }
+
+.btn-sorgula_b {  position: absolute;  bottom: 0; background-color: black; font-size: 15px; }
+.btn-sorgula_b:hover { background-color: lightgray; }
+.btn-sorgula_b > span { display: block; padding-top: 5px; float: right; }
+.btn-sorgula_b > i { padding-top: 5px; }
+
+.btn-sorgula_br {  position: relative;  bottom: 0; background-color: black; font-size: 15px; }
+.btn-sorgula_br:hover { background-color: lightgray; }
+.btn-sorgula_br > span { display: block; padding-top: 5px; float: right; }
+.btn-sorgula_br > i { padding-top: 5px; }
+
+.btn-grid_guncelle { color: darkorange ;  font-size: 16px; }
+.btn-grid_guncelle:hover { color: gold; }
+.btn-grid_guncelle > span { display: block; }
+.btn-grid_guncelle2 { color: darkorange ;  font-size: 10px; }
+
+.btn-grid_sil { color: red ;  font-size: 20px; }
+.btn-grid_sil:hover { color: white; background-color:red; border:none;  }
+.btn-grid_sil:active {  border:none;  }
+.btn-grid_sil > span { display: block; border:none;  }
+
+.btn-grid_yazdir { color: blue ;  font-size: 17px; }
+.btn-grid_yazdir:hover { color: white; background-color:blue; border:none;  }
+.btn-grid_yazdir:active {  border:none;  }
+.btn-grid_yazdir > span { display: block; border:none;  }
+
+.btn-grid_kaydet { color:#6b345f; font-size: 18px; }
+.btn-grid_kaydet:hover {  color: #a37a9b; border:none;  }
+.btn-grid_kaydet:active {  border:none;  }
+
+.btn-grid_saga_el { color:#05fe30; font-size: 18px;  }
+.btn-grid_saga_el:hover {  color:#d2ffda; border:none;  }
+.btn-grid_saga_el:active {  border:none;  }
+
+.btn-grid_sola_el { color: red;  font-size: 18px; }
+.btn-grid_sola_el:hover {  color: mistyrose; border:none;  }
+.btn-grid_sola_el:active {  border:none;  }
+
+.btn-grid_sil { color: red ;  font-size: 20px; }
+.btn-grid_sil:hover { color: white; background-color:red; border:none;  }
+.btn-grid_sil:active {  border:none;  }
+.btn-grid_sil > span { display: block; border:none;  }
+
+.btn-yatay-aktar { background-color: orangered; color: white; font-size: 20px;  text-align:left; } 
+.btn-yatay-aktar2 { background-color: orangered; color: white; font-size: 17px;  text-align:left; } 
+.btn-yatay-aktar:hover { background-color: pink; }
+.btn-yatay-aktar > i { font-size: 30px; float: right; } 
+.btn-yatay-aktar2 > i { font-size: 20px; float: right; } 
+.btn-yatay-aktar > span {   padding-top: 5px;  }
+
+.btn-aktar { width:80px; height:60px; position: absolute; right: 15px; bottom: 0; background-color: orangered; color: white;  }
+.btn-aktar:hover { background-color: pink; color:white }
+.btn-aktar:disabled { background-color: orangered;  color: white;  opacity:0.3; }
+.btn-aktar > span { display: block; padding-top: 5px; }
+.btn-aktar > i { padding-top: 5px; }
+
+.btn-yatay-kaydet { background-color: blue; color: white; font-size: 15px;  text-align:center; } 
+.btn-yatay-kaydet:disabled  { background-color: blue !important; color: white; opacity:0.3; }
+.btn-yatay-kaydet:hover { background-color: lightblue; color:white }
+.btn-yatay-kaydet > i { font-size: 20px; float: right; } 
+.btn-yatay-kaydet > span {  padding-top: 5px;  }
+
+.btn-yatay-mühürac { background-color:mediumspringgreen; color: white; font-size: 15px;  text-align:center; } 
+.btn-yatay-mühürac:disabled  { background-color: mediumspringgreen !important; color: white; opacity:0.4; }
+.btn-yatay-mühürac:hover { background-color:greenyellow; }
+.btn-yatay-mühürac > i { font-size: 20px; float: right; } 
+.btn-yatay-mühürac > span {  padding-top: 5px;  }
+
+.btn-yatay_yazdir { background: darkblue ;  color:white; font-size: 15px; text-align:center;  }
+.btn-yatay_yazdir:hover { color: white; background-color:skyblue; }
+.btn-yatay_yazdir:disabled { background-color: darkblue;  color: white;  opacity:0.3; }
+.btn-yatay_yazdir > i { font-size: 20px; float: right; } 
+.btn-yatay_yazdir > span { padding-top: 5px;  }
+
+.btn-grid_muhurac { background-color:white; color: mediumspringgreen;  font-size: 20px; }
+.btn-grid_muhurac:hover { color: mediumspringgreen; background-color:white; border:none; opacity:0.4  }
+.btn-grid_muhurac:active {  border:none;  }
+.btn-grid_muhurac > span { display: block; border:none;  }
+
+.btn-yatay-sil { background-color: white; color: red; font-size: 15px;  text-align:center; border: 2px solid red; font-weight:bold; } 
+.btn-yatay-sil:hover { background-color:pink; color:red }
+.btn-yatay-sil > i { font-size: 25px; font-weight:bold; float: right; } 
+.btn-yatay-sil > span {  padding-top: 5px;  }
+
+.btn-yatay-basvuru { color: white; background-color: red; border-color:red }
+.btn-yatay-basvuru:hover { background-color: lightpink; }
+.btn-yatay-basvuru > span { display: block;}
+.btn-yatay-basvuru:disabled { background-color: red;  color: white;   opacity:0.2; }
+
+.btn-temizle-kucuk { width:30px; color: black; height:28px; position: relative; background-color: lightgray; }
+.btn-temizle-kucuk:hover { background-color: white; }
+.btn-temizle-kucuk > span { display: block;}
+.btn-temizle-kucuk > i { vertical-align: middle; margin-bottom : 15px;  margin-left: -5px;  }
+
+.btn-onizleme { width:100px; height:62px; position: absolute;  right: 15px;  bottom: 0; background-color: blanchedalmond; color: black; }
+.btn-onizleme:hover { background-color: burlywood; }
+.btn-onizleme > span { display: block; padding-top: 5px; }
+.btn-onizleme > i { padding-top: 5px; }
+
+.btn-yazdir { width:80px;  position: absolute; right: 15px;  background-color: darkblue;  color: white; }
+.btn-yazdir:hover { background-color: skyblue; color: white; }
+.btn-yazdir:disabled { background-color: darkblue;  color: white;  opacity:0.3; }
+.btn-yazdir > span { display: block; }
+.btn-yazdir > i { padding-top: 5px; }
+
+.btn-excel {width:80px; background-color:green; color:white; border: 2px solid teal;  }
+.btn-excel:hover { background-color:white; color:green; }
+.btn-excel > span { display: block; margin-bottom: -8px; }
+.btn-excel > i { font-size:25px; margin-bottom: -7px; }
+
+ .table_line_kck {
+    line-height: 2px;
+}   
+
+ .form-group { margin-bottom: .3rem !important; }
+ .form-control-sm { font-size: .75rem !important; }
+ .select2-container--default .select2-selection--single .select2-selection__rendered { font-size: .75rem !important; }
+ .radio-inline span {font-size: .8rem !important;}
+ label {  margin-bottom: 0; }
+ .form-group { margin-bottom: 5px !important; }
+
+#loading-bar-spinner.spinner {
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 19 !important;
+    animation: loading-bar-spinner 400ms linear infinite;
+}
+
+    #loading-bar-spinner.spinner .spinner-icon {
+        width: 40px;
+        height: 40px;
+        border: solid 4px transparent;
+        border-top-color: #0075c8 !important;
+        border-left-color: #0075c8 !important;
+        border-radius: 50%;
+    }
+
+@keyframes loading-bar-spinner {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

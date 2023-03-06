@@ -1,0 +1,62 @@
+﻿.animationload {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    opacity: 0.5;
+}
+
+/*.bimage {
+
+background-image:url('/assets/img/Amblem_Browser.png')
+}*/
+.osahanloading {
+    animation: 1.5s linear 0s normal none infinite running osahanloading;
+    background: #ccd5e1 none repeat scroll 0 0;
+    border-radius: 50px;
+    height: 70px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    /*background: url('/assets/img/Amblem_Browser.png') no-repeat center center;*/
+}
+
+/*.osahanloading::before {
+       
+    }*/
+
+/*.osahanloading::after {
+        animation: 1.5s linear 0s normal none infinite running osahanloading_after;
+        border-color:Highlight transparent;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 5px;
+        content: "";
+        height: 105px;
+        left: -15px;
+        position: absolute;
+        top: -15px;
+        width: 80px;
+    }*/
+
+@keyframes osahanloading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {}
